@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Pyenv local version file
+.python-version
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
