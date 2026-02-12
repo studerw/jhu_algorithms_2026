@@ -14,3 +14,7 @@ ENV/
 dist/
 build/
 *.egg-info/
+.idea/
+/one_million_random_ints.txt
+/mergesort_stdin
+/introsort_stdin
