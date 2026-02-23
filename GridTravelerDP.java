@@ -9,7 +9,7 @@ public class GridTravelerDP {
      * @return number of unique paths from top-left to bottom-right
      */
     public static long gridTraveler(int n, int m) {
-        
+
         if (n <= 0 || m <= 0) {
             return 0;
         }
