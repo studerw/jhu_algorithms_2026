@@ -3,6 +3,30 @@ import java.util.Scanner;
 
 public class QuickSortStdin {
 
+    static int medianOfThreePartition(int[] A, int p, int r) {
+        int k = (p + r) / 2;   // midpoint index
+
+        // Sort A[p], A[k], A[r] to find the median
+        if (A[p] > A[k]) { int tmp = A[p]; A[p] = A[k]; A[k] = tmp; }
+        if (A[p] > A[r]) { int tmp = A[p]; A[p] = A[r]; A[r] = tmp; }
+        if (A[k] > A[r]) { int tmp = A[k]; A[k] = A[r]; A[r] = tmp; }
+        // Now A[p] <= A[k] <= A[r], so A[k] is the median — swap it into the last position
+        int tmp = A[k]; A[k] = A[r]; A[r] = tmp;
+
+        // Everything below is identical to partition()
+        int x = A[r];
+        int i = p - 1;
+        for (int j = p; j < r; j++) {
+            if (A[j] <= x) {
+                i++;
+                int t = A[i]; A[i] = A[j]; A[j] = t;
+            }
+        }
+        int t = A[i + 1]; A[i + 1] = A[r]; A[r] = t;
+        return i + 1;
+    }
+
+
     // Partition the subarray A[p..r] around a pivot, which ends up in A[q]
     static int partition(int[] A, int p, int r) {
         int x = A[r];       // the pivot
@@ -29,7 +53,7 @@ public class QuickSortStdin {
     static void quicksort(int[] A, int p, int r) {
         if (p < r) {
             // Partition the subarray around the pivot, which ends up in A[q]
-            int q = partition(A, p, r);
+            int q = medianOfThreePartition(A, p, r);
             quicksort(A, p, q - 1);     // recursively sort the low side
             quicksort(A, q + 1, r);     // recursively sort the high side
         }

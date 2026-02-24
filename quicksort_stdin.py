@@ -1,5 +1,30 @@
 import sys
 
+
+def median_of_three_partition(A, p, r):
+    k = (p + r) // 2   # midpoint index
+
+    # Sort A[p], A[k], A[r] to find the median
+    if A[p] > A[k]:
+        A[p], A[k] = A[k], A[p]
+    if A[p] > A[r]:
+        A[p], A[r] = A[r], A[p]
+    if A[k] > A[r]:
+        A[k], A[r] = A[r], A[k]
+    # Now A[p] <= A[k] <= A[r], so A[k] is the median — swap it into the last position
+    A[k], A[r] = A[r], A[k]
+
+    # Everything below is identical to partition()
+    x = A[r]
+    i = p - 1
+    for j in range(p, r):
+        if A[j] <= x:
+            i += 1
+            A[i], A[j] = A[j], A[i]
+    A[i + 1], A[r] = A[r], A[i + 1]
+    return i + 1
+
+
 def partition(A, p, r):
     x = A[r]        # the pivot
     i = p - 1       # highest index into the low side
@@ -15,7 +40,7 @@ def partition(A, p, r):
 def quicksort(A, p, r):
     if p < r:
         # Partition the subarray around the pivot, which ends up in A[q]
-        q = partition(A, p, r)
+        q = median_of_three_partition(A, p, r)
         quicksort(A, p, q - 1)     # recursively sort the low side
         quicksort(A, q + 1, r)     # recursively sort the high side
 
