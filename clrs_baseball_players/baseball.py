@@ -22,23 +22,34 @@ class Player:
         )
 
 
-def parse_stdin() -> list[Player]:
+class ProblemInput:
+    def __init__(self, maximum_cost: int, players: list[Player]):
+        self.maximum_cost = maximum_cost
+        self.players = players
+
+    def __repr__(self):
+        return f"ProblemInput(maximum_cost=${self.maximum_cost:,}, players=[{len(self.players)} players])"
+
+
+def parse_stdin() -> ProblemInput:
     raw = sys.stdin.read()
     data = json.loads(raw)
-    players = [Player.from_dict(entry) for entry in data]
-    return players
+    maximum_cost = data["maximum_cost"]
+    players = [Player.from_dict(entry) for entry in data["players"]]
+    return ProblemInput(maximum_cost, players)
 
 
-def solve(players: list[Player], budget: int):
+def solve(input_obj: ProblemInput):
     # TODO: implement dynamic programming solution
     pass
 
 
 def main():
-    players = parse_stdin()
+    input_obj = parse_stdin()
 
-    print(f"Read {len(players)} players:")
-    for p in players:
+    print(f"Budget: ${input_obj.maximum_cost:,}")
+    print(f"Read {len(input_obj.players)} players:")
+    for p in input_obj.players:
         print(f"  {p}")
 
 
