@@ -1,6 +1,8 @@
 # Baseball Free-Agent Signing
 
-A dynamic programming solution to the free-agent signing problem (CLRS 14-12). Given a budget and a pool of players across multiple positions, maximize total WAR (Wins Above Replacement) without exceeding the budget. At most one player may be signed per position.
+A dynamic programming solution to the free-agent signing problem (CLRS 14-12). 
+
+Given a budget and a pool of players across multiple positions, maximize total WAR (Wins Above Replacement) without exceeding the budget. At most one player may be signed per position.
 
 ## Files
 
