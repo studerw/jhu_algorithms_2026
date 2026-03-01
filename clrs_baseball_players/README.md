@@ -154,3 +154,47 @@ python gen_batch.py
 # Run the memoized solver on a batch file
 python baseball.py -f test_inputs/45_players_90M.json --memo
 ```
+
+---
+
+---
+
+## Complexity Analysis
+
+Let **n** = number of players and **K** = `maximum_cost / 100,000` (the number of discrete budget units, since all costs are multiples of $100,000).
+
+### Brute Force
+
+**Time: O(n · 2ⁿ)**
+
+At each recursive call the algorithm picks one player and branches into two subproblems: skip them, or sign them. This produces a binary decision tree of depth at most n, giving 2ⁿ leaf nodes and O(2ⁿ) total nodes. At each node the algorithm does O(n) work to filter the remaining player set. No results are cached, so overlapping subproblems — subproblems that are reached via multiple different paths through the tree — are recomputed from scratch every time.
+
+**Space: O(n²)**
+
+The recursion stack goes at most n levels deep. At each level a filtered copy of the remaining player set is held in memory, shrinking by at least one player per level. The total memory across the call stack at any one time is O(n) + O(n-1) + ... + O(1) = O(n²).
+
+---
+
+### Memoized
+
+**Time: O(n · 2ⁿ · K) worst case — substantially better in practice**
+
+The memo table is keyed on `(frozenset of remaining players, remaining budget)`. In the theoretical worst case — all n players at distinct positions with no budget constraints eliminating branches — there are up to 2ⁿ distinct player subsets and K distinct budget values, giving O(2ⁿ · K) unique subproblems each requiring O(n) work, for O(n · 2ⁿ · K) total.
+
+In practice the improvement is dramatic. The position constraint is the key: signing any player at position P eliminates every other player at position P from all descendant subproblems. This means many branches of the tree collapse to the same remaining set far sooner than the worst case suggests. On a MacBook Air M2 with n=45 players, brute force took ~3 minutes while memoization took ~10 seconds — an ~18x speedup — and the gap widens as n grows.
+
+**Space: O(n · 2ⁿ · K)**
+
+The memo table stores one entry per unique subproblem. Each entry holds a set of up to n players. In the worst case this is O(n) per entry times O(2ⁿ · K) entries. In practice the number of reachable subproblems is far smaller due to the position constraint, so actual memory usage is much lower than the theoretical bound.
+
+---
+
+### Summary
+
+| | Brute Force | Memoized |
+|---|---|---|
+| **Time** | O(n · 2ⁿ) | O(n · 2ⁿ · K) worst case, much less in practice |
+| **Space** | O(n²) | O(n · 2ⁿ · K) worst case |
+| **n=45 on M2** | ~3 minutes | ~10 seconds |
+
+The memoized solver trades memory for time. The brute force solver uses very little memory but recomputes overlapping subproblems repeatedly. For any n above ~25 the memoized solver is the clear practical choice.
