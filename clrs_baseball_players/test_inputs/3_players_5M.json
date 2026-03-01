@@ -1,0 +1,23 @@
+{
+  "maximum_cost": 5700000,
+  "players": [
+    {
+      "name": "Mike King 0",
+      "position": "F",
+      "cost": 3000000,
+      "war": 1.8
+    },
+    {
+      "name": "James Hall 1",
+      "position": "R",
+      "cost": 11400000,
+      "war": 4.5
+    },
+    {
+      "name": "Gerardo Johnson 2",
+      "position": "P",
+      "cost": 3500000,
+      "war": -0.3
+    }
+  ]
+}

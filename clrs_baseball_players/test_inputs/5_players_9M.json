@@ -1,0 +1,35 @@
+{
+  "maximum_cost": 9600000,
+  "players": [
+    {
+      "name": "Kevin Murphy 0",
+      "position": "E",
+      "cost": 19300000,
+      "war": 2.6
+    },
+    {
+      "name": "Pablo Rivera 1",
+      "position": "A",
+      "cost": 13800000,
+      "war": 0.9
+    },
+    {
+      "name": "Damian Kim 2",
+      "position": "I",
+      "cost": 26300000,
+      "war": 7.4
+    },
+    {
+      "name": "Ivan Hoskins 3",
+      "position": "G",
+      "cost": 23900000,
+      "war": 2.1
+    },
+    {
+      "name": "Darius Collins 4",
+      "position": "C",
+      "cost": 23300000,
+      "war": 3.9
+    }
+  ]
+}

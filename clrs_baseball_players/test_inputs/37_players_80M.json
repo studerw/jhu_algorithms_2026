@@ -1,0 +1,227 @@
+{
+  "maximum_cost": 80200000,
+  "players": [
+    {
+      "name": "Isaac Molina 0",
+      "position": "B",
+      "cost": 27200000,
+      "war": 0.4
+    },
+    {
+      "name": "Grant Soto 1",
+      "position": "D",
+      "cost": 29900000,
+      "war": 5.6
+    },
+    {
+      "name": "Cole Franco 2",
+      "position": "B",
+      "cost": 1800000,
+      "war": 3.9
+    },
+    {
+      "name": "Connor Gordon 3",
+      "position": "G",
+      "cost": 8600000,
+      "war": 8.2
+    },
+    {
+      "name": "Clay Franco 4",
+      "position": "C",
+      "cost": 19700000,
+      "war": 9.5
+    },
+    {
+      "name": "Felix Collins 5",
+      "position": "C",
+      "cost": 14800000,
+      "war": 1.7
+    },
+    {
+      "name": "Mike Springer 6",
+      "position": "A",
+      "cost": 4300000,
+      "war": 4.6
+    },
+    {
+      "name": "Ramon Lopez 7",
+      "position": "E",
+      "cost": 5400000,
+      "war": 8.9
+    },
+    {
+      "name": "Chad Suarez 8",
+      "position": "C",
+      "cost": 29200000,
+      "war": 8.9
+    },
+    {
+      "name": "Drew Hoskins 9",
+      "position": "F",
+      "cost": 18100000,
+      "war": 8.8
+    },
+    {
+      "name": "Javier Cruz 10",
+      "position": "G",
+      "cost": 21900000,
+      "war": 7.6
+    },
+    {
+      "name": "Abel Voit 11",
+      "position": "F",
+      "cost": 7300000,
+      "war": -0.3
+    },
+    {
+      "name": "Hunter Freeman 12",
+      "position": "C",
+      "cost": 22700000,
+      "war": -0.6
+    },
+    {
+      "name": "Tanner Correa 13",
+      "position": "B",
+      "cost": 10000000,
+      "war": 8.6
+    },
+    {
+      "name": "Chad Molina 14",
+      "position": "A",
+      "cost": 4400000,
+      "war": 9.8
+    },
+    {
+      "name": "Jason Hill 15",
+      "position": "C",
+      "cost": 25200000,
+      "war": 2.1
+    },
+    {
+      "name": "Jake Hoskins 16",
+      "position": "G",
+      "cost": 30000000,
+      "war": 0.9
+    },
+    {
+      "name": "Jack Franco 17",
+      "position": "F",
+      "cost": 19600000,
+      "war": 3.3
+    },
+    {
+      "name": "James Cabrera 18",
+      "position": "E",
+      "cost": 1500000,
+      "war": 0.0
+    },
+    {
+      "name": "Nick Bell 19",
+      "position": "C",
+      "cost": 29400000,
+      "war": 0.4
+    },
+    {
+      "name": "Eduardo Cole 20",
+      "position": "C",
+      "cost": 24500000,
+      "war": 9.5
+    },
+    {
+      "name": "Chad Anderson 21",
+      "position": "H",
+      "cost": 17500000,
+      "war": 7.0
+    },
+    {
+      "name": "Carlos Nimmo 22",
+      "position": "F",
+      "cost": 3400000,
+      "war": 4.4
+    },
+    {
+      "name": "Jason Green 23",
+      "position": "I",
+      "cost": 13300000,
+      "war": 4.5
+    },
+    {
+      "name": "Freddie Franco 24",
+      "position": "A",
+      "cost": 22100000,
+      "war": 0.4
+    },
+    {
+      "name": "Alex James 25",
+      "position": "C",
+      "cost": 26000000,
+      "war": 3.0
+    },
+    {
+      "name": "Felix Semien 26",
+      "position": "H",
+      "cost": 28300000,
+      "war": 6.5
+    },
+    {
+      "name": "Roberto Buxton 27",
+      "position": "A",
+      "cost": 14000000,
+      "war": 6.5
+    },
+    {
+      "name": "Dylan Crawford 28",
+      "position": "A",
+      "cost": 7500000,
+      "war": 2.5
+    },
+    {
+      "name": "Dylan Lewis 29",
+      "position": "D",
+      "cost": 8900000,
+      "war": 5.5
+    },
+    {
+      "name": "Garrett Lindor 30",
+      "position": "B",
+      "cost": 14400000,
+      "war": 1.5
+    },
+    {
+      "name": "Shohei Chapman 31",
+      "position": "B",
+      "cost": 29700000,
+      "war": 1.0
+    },
+    {
+      "name": "Derek Ozuna 32",
+      "position": "B",
+      "cost": 25800000,
+      "war": -0.9
+    },
+    {
+      "name": "Taylor Roberts 33",
+      "position": "E",
+      "cost": 23000000,
+      "war": 8.5
+    },
+    {
+      "name": "Sean Howard 34",
+      "position": "E",
+      "cost": 20300000,
+      "war": 7.4
+    },
+    {
+      "name": "Ivan Urias 35",
+      "position": "C",
+      "cost": 500000,
+      "war": 0.2
+    },
+    {
+      "name": "Sean Lindor 36",
+      "position": "F",
+      "cost": 6500000,
+      "war": 3.4
+    }
+  ]
+}

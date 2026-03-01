@@ -1,0 +1,59 @@
+{
+  "maximum_cost": 20700000,
+  "players": [
+    {
+      "name": "Elias Lewis 0",
+      "position": "E",
+      "cost": 5600000,
+      "war": 1.1
+    },
+    {
+      "name": "Adrian Kim 1",
+      "position": "B",
+      "cost": 6500000,
+      "war": 0.7
+    },
+    {
+      "name": "Bryce Acosta 2",
+      "position": "I",
+      "cost": 8200000,
+      "war": 4.8
+    },
+    {
+      "name": "Emilio Devers 3",
+      "position": "G",
+      "cost": 27700000,
+      "war": 0.8
+    },
+    {
+      "name": "Emilio Walker 4",
+      "position": "G",
+      "cost": 11200000,
+      "war": 5.4
+    },
+    {
+      "name": "David Reyes 5",
+      "position": "H",
+      "cost": 18400000,
+      "war": 7.9
+    },
+    {
+      "name": "Antonio Galvis 6",
+      "position": "G",
+      "cost": 17400000,
+      "war": 0.8
+    },
+    {
+      "name": "Nathan Wilson 7",
+      "position": "J",
+      "cost": 2000000,
+      "war": 6.2
+    },
+    {
+      "name": "Darius Nunez 8",
+      "position": "G",
+      "cost": 14700000,
+      "war": 4.8
+    }
+  ]
+}

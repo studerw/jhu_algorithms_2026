@@ -1,0 +1,119 @@
+{
+  "maximum_cost": 39300000,
+  "players": [
+    {
+      "name": "Santiago Garcia 0",
+      "position": "A",
+      "cost": 15400000,
+      "war": 3.1
+    },
+    {
+      "name": "James Lopez 1",
+      "position": "T",
+      "cost": 7000000,
+      "war": 3.3
+    },
+    {
+      "name": "Eric Goldschmidt 2",
+      "position": "K",
+      "cost": 23300000,
+      "war": 0.1
+    },
+    {
+      "name": "Clay Soto 3",
+      "position": "Q",
+      "cost": 6800000,
+      "war": 5.9
+    },
+    {
+      "name": "Hector Swanson 4",
+      "position": "F",
+      "cost": 8800000,
+      "war": 8.7
+    },
+    {
+      "name": "Spencer Adams 5",
+      "position": "T",
+      "cost": 24500000,
+      "war": 6.1
+    },
+    {
+      "name": "Dylan Martin 6",
+      "position": "K",
+      "cost": 7200000,
+      "war": 0.7
+    },
+    {
+      "name": "Drew Thomas 7",
+      "position": "A",
+      "cost": 29200000,
+      "war": 2.0
+    },
+    {
+      "name": "Ryan Bell 8",
+      "position": "O",
+      "cost": 26300000,
+      "war": 6.6
+    },
+    {
+      "name": "Kevin Reynolds 9",
+      "position": "H",
+      "cost": 26800000,
+      "war": -0.0
+    },
+    {
+      "name": "Fernando Duran 10",
+      "position": "N",
+      "cost": 13300000,
+      "war": -0.2
+    },
+    {
+      "name": "Aaron Freeman 11",
+      "position": "D",
+      "cost": 26500000,
+      "war": 7.8
+    },
+    {
+      "name": "Aaron Castillo 12",
+      "position": "R",
+      "cost": 7500000,
+      "war": 4.2
+    },
+    {
+      "name": "Jose Betts 13",
+      "position": "O",
+      "cost": 16600000,
+      "war": 4.2
+    },
+    {
+      "name": "Jason Voit 14",
+      "position": "V",
+      "cost": 15100000,
+      "war": 2.5
+    },
+    {
+      "name": "Brett Hamilton 15",
+      "position": "V",
+      "cost": 15600000,
+      "war": 4.6
+    },
+    {
+      "name": "Abel Hall 16",
+      "position": "M",
+      "cost": 5600000,
+      "war": 2.8
+    },
+    {
+      "name": "Javier Green 17",
+      "position": "P",
+      "cost": 1400000,
+      "war": 6.2
+    },
+    {
+      "name": "Evan Lee 18",
+      "position": "G",
+      "cost": 800000,
+      "war": -0.2
+    }
+  ]
+}

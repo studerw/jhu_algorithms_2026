@@ -1,0 +1,323 @@
+{
+  "maximum_cost": 89400000,
+  "players": [
+    {
+      "name": "Eli Lowe 0",
+      "position": "G",
+      "cost": 4000000,
+      "war": 5.6
+    },
+    {
+      "name": "Cole Rogers 1",
+      "position": "P",
+      "cost": 700000,
+      "war": 3.8
+    },
+    {
+      "name": "Salvador Alvarez 2",
+      "position": "K",
+      "cost": 18500000,
+      "war": 1.9
+    },
+    {
+      "name": "Felix Green 3",
+      "position": "S",
+      "cost": 10900000,
+      "war": 8.5
+    },
+    {
+      "name": "Justin Swanson 4",
+      "position": "K",
+      "cost": 24900000,
+      "war": 6.7
+    },
+    {
+      "name": "Freddie Jimenez 5",
+      "position": "F",
+      "cost": 29800000,
+      "war": -0.5
+    },
+    {
+      "name": "Damian Rivera 6",
+      "position": "K",
+      "cost": 26500000,
+      "war": -0.0
+    },
+    {
+      "name": "Brandon Hamilton 7",
+      "position": "S",
+      "cost": 3600000,
+      "war": 8.7
+    },
+    {
+      "name": "Gerardo King 8",
+      "position": "B",
+      "cost": 8000000,
+      "war": 3.0
+    },
+    {
+      "name": "Kevin Farmer 9",
+      "position": "A",
+      "cost": 14400000,
+      "war": 2.9
+    },
+    {
+      "name": "Greg Harper 10",
+      "position": "O",
+      "cost": 14600000,
+      "war": 4.1
+    },
+    {
+      "name": "Julian Freeman 11",
+      "position": "D",
+      "cost": 1400000,
+      "war": 7.9
+    },
+    {
+      "name": "Andre Harper 12",
+      "position": "L",
+      "cost": 18400000,
+      "war": 2.3
+    },
+    {
+      "name": "Andre Judge 13",
+      "position": "H",
+      "cost": 9200000,
+      "war": 0.4
+    },
+    {
+      "name": "Javier Diaz 14",
+      "position": "D",
+      "cost": 3000000,
+      "war": 1.7
+    },
+    {
+      "name": "Darius Martinez 15",
+      "position": "E",
+      "cost": 17100000,
+      "war": 4.1
+    },
+    {
+      "name": "James Urias 16",
+      "position": "H",
+      "cost": 19200000,
+      "war": 8.4
+    },
+    {
+      "name": "Jacob Franco 17",
+      "position": "S",
+      "cost": 17700000,
+      "war": 6.4
+    },
+    {
+      "name": "Ethan Jackson 18",
+      "position": "G",
+      "cost": 27300000,
+      "war": 9.0
+    },
+    {
+      "name": "Anthony Martinez 19",
+      "position": "P",
+      "cost": 7600000,
+      "war": 6.1
+    },
+    {
+      "name": "David Chapman 20",
+      "position": "D",
+      "cost": 3900000,
+      "war": -0.1
+    },
+    {
+      "name": "Angel Hoskins 21",
+      "position": "L",
+      "cost": 200000,
+      "war": 2.1
+    },
+    {
+      "name": "Jack Hall 22",
+      "position": "O",
+      "cost": 8900000,
+      "war": 1.8
+    },
+    {
+      "name": "Logan Doan 23",
+      "position": "P",
+      "cost": 3500000,
+      "war": 5.4
+    },
+    {
+      "name": "Aaron Jones 24",
+      "position": "A",
+      "cost": 1500000,
+      "war": 6.4
+    },
+    {
+      "name": "Lucas Smith 25",
+      "position": "J",
+      "cost": 10900000,
+      "war": -0.9
+    },
+    {
+      "name": "Hunter Buxton 26",
+      "position": "P",
+      "cost": 9900000,
+      "war": 1.3
+    },
+    {
+      "name": "Chris Cabrera 27",
+      "position": "D",
+      "cost": 25100000,
+      "war": 5.5
+    },
+    {
+      "name": "Jacob Gonzalez 28",
+      "position": "D",
+      "cost": 7800000,
+      "war": 4.8
+    },
+    {
+      "name": "Antonio Nunez 29",
+      "position": "G",
+      "cost": 18600000,
+      "war": 7.3
+    },
+    {
+      "name": "Miguel Duran 30",
+      "position": "J",
+      "cost": 14600000,
+      "war": 0.8
+    },
+    {
+      "name": "Andre Guerrero 31",
+      "position": "D",
+      "cost": 26000000,
+      "war": -0.6
+    },
+    {
+      "name": "Bruno Castillo 32",
+      "position": "A",
+      "cost": 5800000,
+      "war": 8.4
+    },
+    {
+      "name": "Ryan Lee 33",
+      "position": "L",
+      "cost": 13800000,
+      "war": 3.1
+    },
+    {
+      "name": "Pablo Hall 34",
+      "position": "N",
+      "cost": 9300000,
+      "war": -0.1
+    },
+    {
+      "name": "Antonio Brown 35",
+      "position": "Q",
+      "cost": 11100000,
+      "war": 6.8
+    },
+    {
+      "name": "Julian White 36",
+      "position": "J",
+      "cost": 11000000,
+      "war": -0.8
+    },
+    {
+      "name": "Emilio Crawford 37",
+      "position": "Q",
+      "cost": 20500000,
+      "war": 8.4
+    },
+    {
+      "name": "Kyle Vientos 38",
+      "position": "M",
+      "cost": 1300000,
+      "war": 4.0
+    },
+    {
+      "name": "Grant Castillo 39",
+      "position": "B",
+      "cost": 28000000,
+      "war": 5.3
+    },
+    {
+      "name": "Nathan Miller 40",
+      "position": "D",
+      "cost": 700000,
+      "war": 6.0
+    },
+    {
+      "name": "Mario Rojas 41",
+      "position": "B",
+      "cost": 18500000,
+      "war": 1.0
+    },
+    {
+      "name": "Josh Gallo 42",
+      "position": "M",
+      "cost": 500000,
+      "war": 8.2
+    },
+    {
+      "name": "Evan Kirk 43",
+      "position": "D",
+      "cost": 7400000,
+      "war": 4.8
+    },
+    {
+      "name": "Dylan Moore 44",
+      "position": "Q",
+      "cost": 3700000,
+      "war": 3.1
+    },
+    {
+      "name": "Kyle Morales 45",
+      "position": "L",
+      "cost": 13600000,
+      "war": 6.0
+    },
+    {
+      "name": "Santiago Williams 46",
+      "position": "G",
+      "cost": 19500000,
+      "war": 8.9
+    },
+    {
+      "name": "Darius Davis 47",
+      "position": "G",
+      "cost": 10300000,
+      "war": 3.4
+    },
+    {
+      "name": "Jake Garcia 48",
+      "position": "P",
+      "cost": 100000,
+      "war": 1.4
+    },
+    {
+      "name": "Carlos Davis 49",
+      "position": "I",
+      "cost": 2600000,
+      "war": 5.1
+    },
+    {
+      "name": "Cole Muncy 50",
+      "position": "D",
+      "cost": 3500000,
+      "war": 6.6
+    },
+    {
+      "name": "Alejandro Jackson 51",
+      "position": "B",
+      "cost": 23800000,
+      "war": 5.4
+    },
+    {
+      "name": "Ian Tatis 52",
+      "position": "B",
+      "cost": 18000000,
+      "war": 7.5
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "maximum_cost": 85600000,
+  "players": [
+    {
+      "name": "Nolan Leon 0",
+      "position": "N",
+      "cost": 12100000,
+      "war": 4.4
+    },
+    {
+      "name": "Ramon Hall 1",
+      "position": "F",
+      "cost": 4300000,
+      "war": 1.9
+    },
+    {
+      "name": "Julian Reyes 2",
+      "position": "H",
+      "cost": 4900000,
+      "war": 6.3
+    },
+    {
+      "name": "James Duran 3",
+      "position": "G",
+      "cost": 2100000,
+      "war": 9.4
+    },
+    {
+      "name": "Trevor Miller 4",
+      "position": "B",
+      "cost": 27200000,
+      "war": 9.8
+    },
+    {
+      "name": "Eli Franco 5",
+      "position": "M",
+      "cost": 5600000,
+      "war": 6.9
+    },
+    {
+      "name": "Tanner Vientos 6",
+      "position": "E",
+      "cost": 11600000,
+      "war": 3.8
+    },
+    {
+      "name": "Daniel Williams 7",
+      "position": "G",
+      "cost": 8100000,
+      "war": 0.7
+    },
+    {
+      "name": "Dale Carter 8",
+      "position": "Q",
+      "cost": 2800000,
+      "war": 5.4
+    },
+    {
+      "name": "Damian Franco 9",
+      "position": "F",
+      "cost": 1000000,
+      "war": 5.3
+    },
+    {
+      "name": "Jesse Rivera 10",
+      "position": "E",
+      "cost": 7600000,
+      "war": 7.8
+    },
+    {
+      "name": "Leo Correa 11",
+      "position": "R",
+      "cost": 14300000,
+      "war": -0.9
+    },
+    {
+      "name": "Jake King 12",
+      "position": "R",
+      "cost": 9700000,
+      "war": 1.8
+    },
+    {
+      "name": "Bryce Taylor 13",
+      "position": "B",
+      "cost": 12700000,
+      "war": 6.9
+    },
+    {
+      "name": "Darius Taylor 14",
+      "position": "S",
+      "cost": 15700000,
+      "war": 6.4
+    },
+    {
+      "name": "Adrian Nido 15",
+      "position": "P",
+      "cost": 25500000,
+      "war": 8.9
+    },
+    {
+      "name": "Connor Walsh 16",
+      "position": "K",
+      "cost": 23900000,
+      "war": 4.0
+    },
+    {
+      "name": "Darius Ortiz 17",
+      "position": "L",
+      "cost": 19400000,
+      "war": 8.4
+    },
+    {
+      "name": "Rafael Myers 18",
+      "position": "F",
+      "cost": 25800000,
+      "war": 7.4
+    },
+    {
+      "name": "Leo Rogers 19",
+      "position": "K",
+      "cost": 4100000,
+      "war": 2.7
+    },
+    {
+      "name": "Sean Pollack 20",
+      "position": "I",
+      "cost": 4000000,
+      "war": 1.1
+    },
+    {
+      "name": "Abel Ortiz 21",
+      "position": "Q",
+      "cost": 21000000,
+      "war": 9.2
+    },
+    {
+      "name": "Pedro Wilson 22",
+      "position": "L",
+      "cost": 29100000,
+      "war": 1.8
+    },
+    {
+      "name": "Gabriel Morales 23",
+      "position": "N",
+      "cost": 3800000,
+      "war": 1.0
+    },
+    {
+      "name": "Miguel Perez 24",
+      "position": "G",
+      "cost": 18400000,
+      "war": 1.7
+    },
+    {
+      "name": "Ian Devers 25",
+      "position": "E",
+      "cost": 9400000,
+      "war": 8.1
+    },
+    {
+      "name": "Javier Mitchell 26",
+      "position": "S",
+      "cost": 28200000,
+      "war": 3.4
+    },
+    {
+      "name": "Mario Soto 27",
+      "position": "C",
+      "cost": 22400000,
+      "war": 5.5
+    },
+    {
+      "name": "Kevin Crawford 28",
+      "position": "R",
+      "cost": 22300000,
+      "war": -1.0
+    },
+    {
+      "name": "Taylor Cooper 29",
+      "position": "S",
+      "cost": 13700000,
+      "war": 1.0
+    },
+    {
+      "name": "Eric Thomas 30",
+      "position": "M",
+      "cost": 19700000,
+      "war": 6.3
+    },
+    {
+      "name": "Julian Stanton 31",
+      "position": "N",
+      "cost": 14400000,
+      "war": 8.2
+    },
+    {
+      "name": "Jorge Lindor 32",
+      "position": "G",
+      "cost": 3700000,
+      "war": 0.3
+    },
+    {
+      "name": "Nathan Lewis 33",
+      "position": "H",
+      "cost": 25500000,
+      "war": 0.7
+    },
+    {
+      "name": "Ramon Urias 34",
+      "position": "G",
+      "cost": 22900000,
+      "war": 5.3
+    },
+    {
+      "name": "Ryan Pena 35",
+      "position": "C",
+      "cost": 11200000,
+      "war": 9.1
+    },
+    {
+      "name": "Jorge Hoskins 36",
+      "position": "P",
+      "cost": 6400000,
+      "war": 1.6
+    },
+    {
+      "name": "Hector Rosario 37",
+      "position": "M",
+      "cost": 24300000,
+      "war": 4.7
+    },
+    {
+      "name": "Julian Clark 38",
+      "position": "J",
+      "cost": 200000,
+      "war": 1.4
+    },
+    {
+      "name": "Justin Martin 39",
+      "position": "I",
+      "cost": 20500000,
+      "war": 9.1
+    },
+    {
+      "name": "Cole Duran 40",
+      "position": "E",
+      "cost": 200000,
+      "war": 6.2
+    },
+    {
+      "name": "David Galvis 41",
+      "position": "I",
+      "cost": 28300000,
+      "war": 5.0
+    },
+    {
+      "name": "Gerardo Henderson 42",
+      "position": "G",
+      "cost": 19300000,
+      "war": 8.7
+    }
+  ]
+}

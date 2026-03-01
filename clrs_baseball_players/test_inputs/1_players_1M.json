@@ -1,0 +1,11 @@
+{
+  "maximum_cost": 1800000,
+  "players": [
+    {
+      "name": "Nathan Freeman 0",
+      "position": "A",
+      "cost": 21100000,
+      "war": 6.9
+    }
+  ]
+}

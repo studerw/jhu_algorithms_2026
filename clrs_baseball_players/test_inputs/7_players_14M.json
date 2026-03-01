@@ -1,0 +1,47 @@
+{
+  "maximum_cost": 14100000,
+  "players": [
+    {
+      "name": "Logan Murphy 0",
+      "position": "L",
+      "cost": 23100000,
+      "war": 4.5
+    },
+    {
+      "name": "Damian Alvarez 1",
+      "position": "J",
+      "cost": 12500000,
+      "war": 3.4
+    },
+    {
+      "name": "Cole Leon 2",
+      "position": "N",
+      "cost": 28500000,
+      "war": 2.3
+    },
+    {
+      "name": "Ramon Garcia 3",
+      "position": "L",
+      "cost": 26900000,
+      "war": -0.2
+    },
+    {
+      "name": "Anthony Rosario 4",
+      "position": "N",
+      "cost": 22100000,
+      "war": 9.7
+    },
+    {
+      "name": "Mike Walker 5",
+      "position": "B",
+      "cost": 28400000,
+      "war": 7.5
+    },
+    {
+      "name": "Pablo Carter 6",
+      "position": "N",
+      "cost": 19300000,
+      "war": 5.6
+    }
+  ]
+}

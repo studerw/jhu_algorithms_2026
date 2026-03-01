@@ -1,0 +1,95 @@
+{
+  "maximum_cost": 33300000,
+  "players": [
+    {
+      "name": "Santiago Harper 0",
+      "position": "B",
+      "cost": 13400000,
+      "war": 5.4
+    },
+    {
+      "name": "Garrett Morales 1",
+      "position": "M",
+      "cost": 24100000,
+      "war": 2.5
+    },
+    {
+      "name": "Dominic Jackson 2",
+      "position": "H",
+      "cost": 22500000,
+      "war": 7.9
+    },
+    {
+      "name": "Kevin Perez 3",
+      "position": "C",
+      "cost": 17800000,
+      "war": 6.9
+    },
+    {
+      "name": "Drew Ortiz 4",
+      "position": "C",
+      "cost": 4600000,
+      "war": 9.4
+    },
+    {
+      "name": "Brett Nido 5",
+      "position": "J",
+      "cost": 10600000,
+      "war": 7.7
+    },
+    {
+      "name": "Diego Bryant 6",
+      "position": "E",
+      "cost": 11200000,
+      "war": 2.1
+    },
+    {
+      "name": "Leo Fernandez 7",
+      "position": "G",
+      "cost": 17400000,
+      "war": 1.7
+    },
+    {
+      "name": "Patrick Lewis 8",
+      "position": "I",
+      "cost": 17400000,
+      "war": 3.6
+    },
+    {
+      "name": "Javier Stanton 9",
+      "position": "A",
+      "cost": 16100000,
+      "war": 7.2
+    },
+    {
+      "name": "Carlos Stanton 10",
+      "position": "I",
+      "cost": 21800000,
+      "war": 0.8
+    },
+    {
+      "name": "Drew Cole 11",
+      "position": "J",
+      "cost": 10100000,
+      "war": 4.4
+    },
+    {
+      "name": "Matt Crawford 12",
+      "position": "H",
+      "cost": 11400000,
+      "war": 1.9
+    },
+    {
+      "name": "Clay Gordon 13",
+      "position": "E",
+      "cost": 23100000,
+      "war": 1.0
+    },
+    {
+      "name": "Bruno Muncy 14",
+      "position": "F",
+      "cost": 6000000,
+      "war": 4.8
+    }
+  ]
+}

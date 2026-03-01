@@ -1,0 +1,191 @@
+{
+  "maximum_cost": 61200000,
+  "players": [
+    {
+      "name": "Justin Bryant 0",
+      "position": "D",
+      "cost": 17200000,
+      "war": 6.9
+    },
+    {
+      "name": "Eli Lewis 1",
+      "position": "I",
+      "cost": 21400000,
+      "war": -1.0
+    },
+    {
+      "name": "Lance Anderson 2",
+      "position": "A",
+      "cost": 25500000,
+      "war": -0.2
+    },
+    {
+      "name": "Eduardo Benintendi 3",
+      "position": "D",
+      "cost": 4300000,
+      "war": 8.1
+    },
+    {
+      "name": "Taylor Reynolds 4",
+      "position": "D",
+      "cost": 4000000,
+      "war": 5.4
+    },
+    {
+      "name": "Daniel Lindor 5",
+      "position": "D",
+      "cost": 20800000,
+      "war": 8.9
+    },
+    {
+      "name": "Ivan Turner 6",
+      "position": "H",
+      "cost": 17800000,
+      "war": 8.6
+    },
+    {
+      "name": "Felix Donaldson 7",
+      "position": "C",
+      "cost": 800000,
+      "war": 8.5
+    },
+    {
+      "name": "Hector Myers 8",
+      "position": "D",
+      "cost": 8000000,
+      "war": -0.1
+    },
+    {
+      "name": "Dale Miller 9",
+      "position": "D",
+      "cost": 19400000,
+      "war": 2.1
+    },
+    {
+      "name": "Jose Guerrero 10",
+      "position": "C",
+      "cost": 14600000,
+      "war": 3.3
+    },
+    {
+      "name": "Felix Murphy 11",
+      "position": "E",
+      "cost": 19700000,
+      "war": -0.0
+    },
+    {
+      "name": "Chad Wilson 12",
+      "position": "F",
+      "cost": 9500000,
+      "war": 2.1
+    },
+    {
+      "name": "Roberto Harper 13",
+      "position": "G",
+      "cost": 11000000,
+      "war": 6.6
+    },
+    {
+      "name": "Eric Correa 14",
+      "position": "B",
+      "cost": 20400000,
+      "war": 7.9
+    },
+    {
+      "name": "Greg Estrada 15",
+      "position": "I",
+      "cost": 7600000,
+      "war": 2.1
+    },
+    {
+      "name": "Leo Nido 16",
+      "position": "E",
+      "cost": 28300000,
+      "war": 0.0
+    },
+    {
+      "name": "Santiago Cano 17",
+      "position": "G",
+      "cost": 26900000,
+      "war": 8.4
+    },
+    {
+      "name": "Lucas Miller 18",
+      "position": "C",
+      "cost": 11800000,
+      "war": 8.6
+    },
+    {
+      "name": "Damian Machado 19",
+      "position": "G",
+      "cost": 7700000,
+      "war": 8.5
+    },
+    {
+      "name": "Scott Buxton 20",
+      "position": "D",
+      "cost": 8100000,
+      "war": 1.1
+    },
+    {
+      "name": "Darius Cano 21",
+      "position": "H",
+      "cost": 3500000,
+      "war": -0.6
+    },
+    {
+      "name": "Santiago Flores 22",
+      "position": "B",
+      "cost": 10900000,
+      "war": 0.4
+    },
+    {
+      "name": "Juan Lindor 23",
+      "position": "H",
+      "cost": 25200000,
+      "war": 9.5
+    },
+    {
+      "name": "Jalen Smith 24",
+      "position": "A",
+      "cost": 6700000,
+      "war": 8.6
+    },
+    {
+      "name": "Rafael Morales 25",
+      "position": "I",
+      "cost": 7200000,
+      "war": 8.9
+    },
+    {
+      "name": "Chad Cole 26",
+      "position": "C",
+      "cost": 19400000,
+      "war": 9.4
+    },
+    {
+      "name": "Greg Devers 27",
+      "position": "B",
+      "cost": 24600000,
+      "war": 6.9
+    },
+    {
+      "name": "Evan Garcia 28",
+      "position": "G",
+      "cost": 29500000,
+      "war": 7.1
+    },
+    {
+      "name": "Andre Williams 29",
+      "position": "F",
+      "cost": 25400000,
+      "war": 5.2
+    },
+    {
+      "name": "Emilio Smith 30",
+      "position": "B",
+      "cost": 600000,
+      "war": 6.4
+    }
+  ]
+}

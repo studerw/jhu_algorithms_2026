@@ -1,0 +1,215 @@
+{
+  "maximum_cost": 83700000,
+  "players": [
+    {
+      "name": "Garrett Acosta 0",
+      "position": "H",
+      "cost": 19200000,
+      "war": 7.2
+    },
+    {
+      "name": "Eli Nunez 1",
+      "position": "G",
+      "cost": 7400000,
+      "war": 4.2
+    },
+    {
+      "name": "Jason Ramirez 2",
+      "position": "D",
+      "cost": 8200000,
+      "war": 7.1
+    },
+    {
+      "name": "Jason Devers 3",
+      "position": "L",
+      "cost": 17200000,
+      "war": -0.4
+    },
+    {
+      "name": "Casey Vientos 4",
+      "position": "M",
+      "cost": 10300000,
+      "war": 1.0
+    },
+    {
+      "name": "Marcus Judge 5",
+      "position": "T",
+      "cost": 29600000,
+      "war": 4.1
+    },
+    {
+      "name": "Patrick Nunez 6",
+      "position": "F",
+      "cost": 23700000,
+      "war": 0.9
+    },
+    {
+      "name": "Drew Freeman 7",
+      "position": "G",
+      "cost": 26000000,
+      "war": 4.7
+    },
+    {
+      "name": "Freddie Urias 8",
+      "position": "Y",
+      "cost": 17900000,
+      "war": 7.8
+    },
+    {
+      "name": "Evan Morales 9",
+      "position": "D",
+      "cost": 3800000,
+      "war": 4.5
+    },
+    {
+      "name": "Bruno Morales 10",
+      "position": "N",
+      "cost": 23000000,
+      "war": 6.5
+    },
+    {
+      "name": "Joel Bautista 11",
+      "position": "B",
+      "cost": 28200000,
+      "war": 7.3
+    },
+    {
+      "name": "Abel Williams 12",
+      "position": "O",
+      "cost": 1900000,
+      "war": 5.2
+    },
+    {
+      "name": "Alejandro Cole 13",
+      "position": "K",
+      "cost": 20400000,
+      "war": 2.2
+    },
+    {
+      "name": "Lance Rodriguez 14",
+      "position": "L",
+      "cost": 16700000,
+      "war": 4.6
+    },
+    {
+      "name": "Andre Smith 15",
+      "position": "H",
+      "cost": 5400000,
+      "war": 9.9
+    },
+    {
+      "name": "Omar Perez 16",
+      "position": "Y",
+      "cost": 17600000,
+      "war": -1.0
+    },
+    {
+      "name": "Drew Roberts 17",
+      "position": "T",
+      "cost": 20500000,
+      "war": 0.2
+    },
+    {
+      "name": "Logan Hoskins 18",
+      "position": "X",
+      "cost": 23200000,
+      "war": 9.6
+    },
+    {
+      "name": "Luis Betts 19",
+      "position": "N",
+      "cost": 4900000,
+      "war": 6.6
+    },
+    {
+      "name": "Antonio Rodriguez 20",
+      "position": "I",
+      "cost": 16700000,
+      "war": 8.4
+    },
+    {
+      "name": "Caleb Davis 21",
+      "position": "T",
+      "cost": 2000000,
+      "war": 5.4
+    },
+    {
+      "name": "Drew Vientos 22",
+      "position": "G",
+      "cost": 29500000,
+      "war": 4.4
+    },
+    {
+      "name": "Clay Moore 23",
+      "position": "V",
+      "cost": 7100000,
+      "war": 1.7
+    },
+    {
+      "name": "Juan Hamilton 24",
+      "position": "G",
+      "cost": 25200000,
+      "war": 7.3
+    },
+    {
+      "name": "Cole Acosta 25",
+      "position": "J",
+      "cost": 9100000,
+      "war": 5.0
+    },
+    {
+      "name": "Javier Anderson 26",
+      "position": "P",
+      "cost": 5100000,
+      "war": -0.4
+    },
+    {
+      "name": "Emilio Doan 27",
+      "position": "E",
+      "cost": 18800000,
+      "war": -0.1
+    },
+    {
+      "name": "Eric Bautista 28",
+      "position": "L",
+      "cost": 26000000,
+      "war": -0.5
+    },
+    {
+      "name": "Elias Jones 29",
+      "position": "Q",
+      "cost": 6500000,
+      "war": 6.3
+    },
+    {
+      "name": "Lance Buxton 30",
+      "position": "U",
+      "cost": 20700000,
+      "war": 8.2
+    },
+    {
+      "name": "Elias Gallo 31",
+      "position": "F",
+      "cost": 29000000,
+      "war": 8.8
+    },
+    {
+      "name": "Adrian Merrifield 32",
+      "position": "S",
+      "cost": 29300000,
+      "war": 9.6
+    },
+    {
+      "name": "Corey Pena 33",
+      "position": "L",
+      "cost": 2500000,
+      "war": 8.4
+    },
+    {
+      "name": "Shohei Contreras 34",
+      "position": "Q",
+      "cost": 25100000,
+      "war": 0.5
+    }
+  ]
+}

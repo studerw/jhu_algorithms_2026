@@ -1,0 +1,83 @@
+{
+  "maximum_cost": 24000000,
+  "players": [
+    {
+      "name": "Ryan Mitchell 0",
+      "position": "B",
+      "cost": 4100000,
+      "war": 3.9
+    },
+    {
+      "name": "Daniel Rogers 1",
+      "position": "S",
+      "cost": 7700000,
+      "war": 5.0
+    },
+    {
+      "name": "Jalen Gomez 2",
+      "position": "S",
+      "cost": 10800000,
+      "war": 4.2
+    },
+    {
+      "name": "Julian Farmer 3",
+      "position": "A",
+      "cost": 6300000,
+      "war": -0.3
+    },
+    {
+      "name": "Eli Martin 4",
+      "position": "D",
+      "cost": 16100000,
+      "war": 1.1
+    },
+    {
+      "name": "Luis Contreras 5",
+      "position": "S",
+      "cost": 12900000,
+      "war": 7.8
+    },
+    {
+      "name": "Miguel Rojas 6",
+      "position": "F",
+      "cost": 10900000,
+      "war": 5.9
+    },
+    {
+      "name": "Pedro Duran 7",
+      "position": "Q",
+      "cost": 11000000,
+      "war": 0.5
+    },
+    {
+      "name": "Hunter Alvarez 8",
+      "position": "T",
+      "cost": 14000000,
+      "war": 9.6
+    },
+    {
+      "name": "Sean Chapman 9",
+      "position": "I",
+      "cost": 29500000,
+      "war": 8.5
+    },
+    {
+      "name": "Logan Hamilton 10",
+      "position": "R",
+      "cost": 27300000,
+      "war": 5.5
+    },
+    {
+      "name": "Caleb Henderson 11",
+      "position": "G",
+      "cost": 5200000,
+      "war": 4.4
+    },
+    {
+      "name": "Jorge Adams 12",
+      "position": "U",
+      "cost": 18700000,
+      "war": 5.9
+    }
+  ]
+}

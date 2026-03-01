@@ -1,6 +1,8 @@
 import json
 import sys
 
+# Global debug variable
+DEBUG = False
 
 class Player:
     def __init__(self, name: str, position: str, cost: int, war: float) -> None:
@@ -40,7 +42,19 @@ class PlayersAndMaxCost:
 
 
 def parse_stdin() -> PlayersAndMaxCost:
-    raw_json: str = sys.stdin.read()
+    if "-f" in sys.argv or "--file" in sys.argv:
+        try:
+            idx = sys.argv.index("-f") if "-f" in sys.argv else sys.argv.index("--file")
+            filename = sys.argv[idx + 1]
+            f = open(filename, 'r')
+            raw_json = f.read()
+            f.close()
+        except (IndexError, IOError) as e:
+            print(f"Error reading file: {e}")
+            sys.exit(1)
+    else:
+        raw_json = sys.stdin.read()
+
     data: dict[str, object] = json.loads(raw_json)
     maximum_cost = int(data["maximum_cost"])  # type: ignore[arg-type]
     players: set[Player] = {
@@ -50,54 +64,112 @@ def parse_stdin() -> PlayersAndMaxCost:
     return PlayersAndMaxCost(maximum_cost, players)
 
 
-def solve(p_a_m_c: PlayersAndMaxCost) -> set[Player]:
-    return brute_force_solve(p_a_m_c.players, p_a_m_c.maximum_cost)
+def solve(p_a_m_c: PlayersAndMaxCost, use_memo: bool) -> set[Player]:
+    if use_memo:
+        memo: dict[tuple[frozenset[Player], int], set[Player]] = {}
+        return memoized_solve(p_a_m_c.players, p_a_m_c.maximum_cost, memo)
+    else:
+        return brute_force_solve(p_a_m_c.players, p_a_m_c.maximum_cost)
+
 
 def brute_force_solve(players: set[Player], maximum_cost: int) -> set[Player]:
-    # Pop a player off the stack
     current_player = next(iter(players), None)
+    if current_player is None or maximum_cost <= 0:
+        return set()
 
-    # No more players or no more money
-    if current_player is None or maximum_cost == 0:
-        return players
+    remaining_players = {p for p in players if p != current_player}
 
-    players.remove(current_player)
+    # Branch A: Without
+    result_without_current = brute_force_solve(remaining_players, maximum_cost)
+
+    # Branch B: With
     result_with_current = set()
+    if current_player.cost <= maximum_cost:
+        others_at_diff_pos = {p for p in remaining_players if p.position != current_player.position}
+        sub_result = brute_force_solve(others_at_diff_pos, maximum_cost - current_player.cost)
+        result_with_current = {current_player} | sub_result
 
-    # If this player is too expensive, try all the other players
-    result_without_current = brute_force_solve(players, maximum_cost)
+    war_with = sum(p.war for p in result_with_current)
+    war_without = sum(p.war for p in result_without_current)
 
-    # If he's not then get the optimal subsolution for play and the other players not in his position
-    if current_player.cost < maximum_cost:
-        result_with_current = brute_force_solve({p for p in players if p.position != current_player.position}, maximum_cost-current_player.cost)
+    if DEBUG:
+        print(f"DEBUG: Evaluating {current_player.name if current_player else 'None'}")
 
-    max_war_with = sum(p.war for p in result_with_current)
-    max_war_without = sum(p.war for p in result_without_current)
-    if (max_war_with > max_war_without):
-        players.add(current_player)
+    return result_with_current if war_with > war_without else result_without_current
 
-    return players
 
+def memoized_solve(
+    players: set[Player],
+    maximum_cost: int,
+    memo: dict[tuple[frozenset[Player], int], set[Player]],
+) -> set[Player]:
+    key: tuple[frozenset[Player], int] = (frozenset(players), maximum_cost)
+    if key in memo:
+        if DEBUG:
+            print(f"DEBUG: Cache hit — {len(players)} players, budget ${maximum_cost:,}")
+        return memo[key]
+
+    current_player = next(iter(players), None)
+    if current_player is None or maximum_cost <= 0:
+        memo[key] = set()
+        return set()
+
+    remaining_players = {p for p in players if p != current_player}
+
+    # Branch A: Without
+    result_without_current = memoized_solve(remaining_players, maximum_cost, memo)
+
+    # Branch B: With
+    result_with_current: set[Player] = set()
+    if current_player.cost <= maximum_cost:
+        others_at_diff_pos = {p for p in remaining_players if p.position != current_player.position}
+        sub_result = memoized_solve(others_at_diff_pos, maximum_cost - current_player.cost, memo)
+        result_with_current = {current_player} | sub_result
+
+    war_with = sum(p.war for p in result_with_current)
+    war_without = sum(p.war for p in result_without_current)
+
+    if DEBUG:
+        print(f"DEBUG: Evaluating {current_player.name}")
+
+    result = result_with_current if war_with > war_without else result_without_current
+    memo[key] = result
+    return result
 
 
 def main() -> None:
+    global DEBUG
+    if "-d" in sys.argv or "--debug" in sys.argv:
+        DEBUG = True
+
+    use_memo: bool = "-m" in sys.argv or "--memo" in sys.argv
+
     input_obj: PlayersAndMaxCost = parse_stdin()
+
+    if DEBUG:
+        print("DEBUG MODE ENABLED")
+        print(f"Using: {'memoized' if use_memo else 'brute force'} solver")
 
     print(f"Budget: ${input_obj.maximum_cost:,}")
     print(f"Read {len(input_obj.players)} players:")
-    for p in input_obj.players:
-        print(f"  {p}")
+    if DEBUG:
+        for p in input_obj.players:
+            print(f"  {p}")
 
-    result: set[Player] = solve(input_obj)
-    print(f"----------------\n\n")
-    for p in result:
-        print(f"  {p}")
-    print(f"----------------\n\n")
+    result: set[Player] = solve(input_obj, use_memo)
+
+    if DEBUG:
+        print(f"----------------\n\n")
+        for p in result:
+            print(f"  {p}")
+        print(f"----------------\n\n")
+
     total_war = sum(p.war for p in result)
     total_cost = sum(p.cost for p in result)
     extra_money = input_obj.maximum_cost - total_cost
     print(f"Total WAR: {total_war:.1f}")
-    print(f"Total Cost: ${total_cost:,}, Extra Money: ${extra_money:,}")
+    print(f"Total Cost: ${total_cost:,}, Money Left Over (should be positive): ${extra_money:,}")
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,143 @@
+{
+  "maximum_cost": 47800000,
+  "players": [
+    {
+      "name": "Lance White 0",
+      "position": "C",
+      "cost": 16900000,
+      "war": 8.6
+    },
+    {
+      "name": "Gavin Harris 1",
+      "position": "B",
+      "cost": 14900000,
+      "war": 6.8
+    },
+    {
+      "name": "Adrian Clark 2",
+      "position": "D",
+      "cost": 14900000,
+      "war": 4.4
+    },
+    {
+      "name": "Jake Martin 3",
+      "position": "E",
+      "cost": 25200000,
+      "war": 2.3
+    },
+    {
+      "name": "Kevin Anderson 4",
+      "position": "A",
+      "cost": 27700000,
+      "war": 1.0
+    },
+    {
+      "name": "Brian Roberts 5",
+      "position": "F",
+      "cost": 22500000,
+      "war": 2.1
+    },
+    {
+      "name": "Colin Martinez 6",
+      "position": "I",
+      "cost": 12000000,
+      "war": 5.2
+    },
+    {
+      "name": "Derek Harper 7",
+      "position": "C",
+      "cost": 23900000,
+      "war": 9.2
+    },
+    {
+      "name": "Isaac Nimmo 8",
+      "position": "H",
+      "cost": 15600000,
+      "war": 9.0
+    },
+    {
+      "name": "Derek Ramirez 9",
+      "position": "J",
+      "cost": 14900000,
+      "war": -0.8
+    },
+    {
+      "name": "Shohei Murphy 10",
+      "position": "G",
+      "cost": 17800000,
+      "war": 4.4
+    },
+    {
+      "name": "Sam Lopez 11",
+      "position": "E",
+      "cost": 11200000,
+      "war": 6.1
+    },
+    {
+      "name": "Caleb Gonzalez 12",
+      "position": "C",
+      "cost": 27000000,
+      "war": 8.1
+    },
+    {
+      "name": "Jason Nimmo 13",
+      "position": "B",
+      "cost": 14000000,
+      "war": 8.0
+    },
+    {
+      "name": "Carlos Nido 14",
+      "position": "F",
+      "cost": 27800000,
+      "war": -0.1
+    },
+    {
+      "name": "Hunter Lopez 15",
+      "position": "C",
+      "cost": 29200000,
+      "war": 9.4
+    },
+    {
+      "name": "Taylor Freeman 16",
+      "position": "D",
+      "cost": 11100000,
+      "war": 9.7
+    },
+    {
+      "name": "Darius Stanton 17",
+      "position": "G",
+      "cost": 16700000,
+      "war": 7.9
+    },
+    {
+      "name": "Miguel Estrada 18",
+      "position": "J",
+      "cost": 26900000,
+      "war": -0.0
+    },
+    {
+      "name": "Brian Ramirez 19",
+      "position": "E",
+      "cost": 16400000,
+      "war": 8.4
+    },
+    {
+      "name": "Dylan Brown 20",
+      "position": "A",
+      "cost": 900000,
+      "war": 7.2
+    },
+    {
+      "name": "Curtis Ortiz 21",
+      "position": "G",
+      "cost": 17100000,
+      "war": -0.1
+    },
+    {
+      "name": "Nolan Rogers 22",
+      "position": "E",
+      "cost": 2900000,
+      "war": 2.7
+    }
+  ]
+}

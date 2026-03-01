@@ -1,0 +1,239 @@
+{
+  "maximum_cost": 80800000,
+  "players": [
+    {
+      "name": "Gerardo Turner 0",
+      "position": "A",
+      "cost": 29000000,
+      "war": 5.1
+    },
+    {
+      "name": "Lucas Carter 1",
+      "position": "L",
+      "cost": 20900000,
+      "war": 4.2
+    },
+    {
+      "name": "Kyle Lowe 2",
+      "position": "O",
+      "cost": 6500000,
+      "war": 2.2
+    },
+    {
+      "name": "Kevin Rodriguez 3",
+      "position": "B",
+      "cost": 3400000,
+      "war": 7.2
+    },
+    {
+      "name": "Corey Benintendi 4",
+      "position": "F",
+      "cost": 12600000,
+      "war": 1.7
+    },
+    {
+      "name": "Pedro Judge 5",
+      "position": "K",
+      "cost": 19000000,
+      "war": 3.3
+    },
+    {
+      "name": "Antonio Bryant 6",
+      "position": "K",
+      "cost": 12900000,
+      "war": 4.7
+    },
+    {
+      "name": "Brandon Hill 7",
+      "position": "P",
+      "cost": 16600000,
+      "war": 5.9
+    },
+    {
+      "name": "Alex Urias 8",
+      "position": "C",
+      "cost": 13800000,
+      "war": 4.0
+    },
+    {
+      "name": "Jorge Crawford 9",
+      "position": "D",
+      "cost": 28000000,
+      "war": 8.8
+    },
+    {
+      "name": "Jake Muncy 10",
+      "position": "G",
+      "cost": 26400000,
+      "war": 1.9
+    },
+    {
+      "name": "Ricardo Mitchell 11",
+      "position": "P",
+      "cost": 11300000,
+      "war": 1.5
+    },
+    {
+      "name": "Drew Collins 12",
+      "position": "H",
+      "cost": 11600000,
+      "war": 2.1
+    },
+    {
+      "name": "Scott Hernandez 13",
+      "position": "D",
+      "cost": 7700000,
+      "war": 1.2
+    },
+    {
+      "name": "Adrian Sanchez 14",
+      "position": "G",
+      "cost": 4700000,
+      "war": 7.9
+    },
+    {
+      "name": "Sam Pena 15",
+      "position": "D",
+      "cost": 18200000,
+      "war": 0.8
+    },
+    {
+      "name": "Byron Mitchell 16",
+      "position": "N",
+      "cost": 9700000,
+      "war": 6.9
+    },
+    {
+      "name": "Pedro Collins 17",
+      "position": "G",
+      "cost": 29900000,
+      "war": 1.3
+    },
+    {
+      "name": "Bruno Murphy 18",
+      "position": "C",
+      "cost": 7400000,
+      "war": 7.1
+    },
+    {
+      "name": "Juan Brown 19",
+      "position": "J",
+      "cost": 23800000,
+      "war": 2.4
+    },
+    {
+      "name": "Adam Walsh 20",
+      "position": "O",
+      "cost": 6900000,
+      "war": 0.5
+    },
+    {
+      "name": "Felix Hoskins 21",
+      "position": "I",
+      "cost": 29400000,
+      "war": -0.4
+    },
+    {
+      "name": "Connor Urshela 22",
+      "position": "H",
+      "cost": 8900000,
+      "war": 0.9
+    },
+    {
+      "name": "Ramon Voit 23",
+      "position": "J",
+      "cost": 8800000,
+      "war": 3.8
+    },
+    {
+      "name": "Angel Martin 24",
+      "position": "L",
+      "cost": 900000,
+      "war": 2.7
+    },
+    {
+      "name": "Roberto Betts 25",
+      "position": "N",
+      "cost": 29500000,
+      "war": 7.0
+    },
+    {
+      "name": "Lorenzo Miller 26",
+      "position": "H",
+      "cost": 20000000,
+      "war": 3.4
+    },
+    {
+      "name": "Pedro Cano 27",
+      "position": "J",
+      "cost": 22000000,
+      "war": 5.2
+    },
+    {
+      "name": "Pablo Rosario 28",
+      "position": "J",
+      "cost": 18100000,
+      "war": 5.5
+    },
+    {
+      "name": "Juan Franco 29",
+      "position": "I",
+      "cost": 4800000,
+      "war": 1.0
+    },
+    {
+      "name": "Brett Kim 30",
+      "position": "E",
+      "cost": 11600000,
+      "war": 8.5
+    },
+    {
+      "name": "Grant Cooper 31",
+      "position": "L",
+      "cost": 29600000,
+      "war": 9.0
+    },
+    {
+      "name": "Cole Lewis 32",
+      "position": "N",
+      "cost": 27500000,
+      "war": 8.2
+    },
+    {
+      "name": "Trevor Turner 33",
+      "position": "L",
+      "cost": 26500000,
+      "war": 7.5
+    },
+    {
+      "name": "Kyle Fernandez 34",
+      "position": "D",
+      "cost": 12600000,
+      "war": 9.6
+    },
+    {
+      "name": "Marcus Lewis 35",
+      "position": "J",
+      "cost": 3000000,
+      "war": 3.8
+    },
+    {
+      "name": "Javier Molina 36",
+      "position": "O",
+      "cost": 13800000,
+      "war": 4.3
+    },
+    {
+      "name": "Brandon Springer 37",
+      "position": "N",
+      "cost": 19600000,
+      "war": 4.4
+    },
+    {
+      "name": "Miguel Perez 38",
+      "position": "P",
+      "cost": 18000000,
+      "war": 2.4
+    }
+  ]
+}

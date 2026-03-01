@@ -1,0 +1,155 @@
+{
+  "maximum_cost": 56700000,
+  "players": [
+    {
+      "name": "Ian Machado 0",
+      "position": "T",
+      "cost": 25200000,
+      "war": 9.7
+    },
+    {
+      "name": "Derek Beltran 1",
+      "position": "T",
+      "cost": 3500000,
+      "war": 2.7
+    },
+    {
+      "name": "Justin Wilson 2",
+      "position": "K",
+      "cost": 17200000,
+      "war": 3.2
+    },
+    {
+      "name": "Oscar Villar 3",
+      "position": "V",
+      "cost": 29000000,
+      "war": 7.6
+    },
+    {
+      "name": "Juan Rojas 4",
+      "position": "S",
+      "cost": 11800000,
+      "war": 9.0
+    },
+    {
+      "name": "Dominic Taylor 5",
+      "position": "T",
+      "cost": 20500000,
+      "war": 5.5
+    },
+    {
+      "name": "Chad Gomez 6",
+      "position": "V",
+      "cost": 27300000,
+      "war": 7.4
+    },
+    {
+      "name": "Diego Kirk 7",
+      "position": "H",
+      "cost": 28100000,
+      "war": 9.7
+    },
+    {
+      "name": "Sean Judge 8",
+      "position": "G",
+      "cost": 13800000,
+      "war": 8.6
+    },
+    {
+      "name": "Anthony Meadows 9",
+      "position": "S",
+      "cost": 22900000,
+      "war": 5.8
+    },
+    {
+      "name": "Hector Leon 10",
+      "position": "W",
+      "cost": 5700000,
+      "war": 4.5
+    },
+    {
+      "name": "Jose Nunez 11",
+      "position": "M",
+      "cost": 14200000,
+      "war": 0.5
+    },
+    {
+      "name": "Jacob Semien 12",
+      "position": "M",
+      "cost": 14300000,
+      "war": 9.0
+    },
+    {
+      "name": "Bruno Urshela 13",
+      "position": "R",
+      "cost": 29400000,
+      "war": 8.9
+    },
+    {
+      "name": "Corey Bregman 14",
+      "position": "J",
+      "cost": 8800000,
+      "war": 8.1
+    },
+    {
+      "name": "Jacob Meadows 15",
+      "position": "T",
+      "cost": 14500000,
+      "war": -0.1
+    },
+    {
+      "name": "Rafael Tatis 16",
+      "position": "B",
+      "cost": 800000,
+      "war": 7.8
+    },
+    {
+      "name": "Darius Green 17",
+      "position": "J",
+      "cost": 12800000,
+      "war": 1.8
+    },
+    {
+      "name": "Emilio Hoskins 18",
+      "position": "L",
+      "cost": 27400000,
+      "war": 2.0
+    },
+    {
+      "name": "Angel Green 19",
+      "position": "F",
+      "cost": 16600000,
+      "war": -0.5
+    },
+    {
+      "name": "Derek Duran 20",
+      "position": "W",
+      "cost": 13900000,
+      "war": 7.6
+    },
+    {
+      "name": "Hunter Castillo 21",
+      "position": "I",
+      "cost": 24700000,
+      "war": 9.3
+    },
+    {
+      "name": "Justin Galvis 22",
+      "position": "B",
+      "cost": 10300000,
+      "war": 8.9
+    },
+    {
+      "name": "Derek Perez 23",
+      "position": "W",
+      "cost": 28300000,
+      "war": 6.4
+    },
+    {
+      "name": "Aaron Hamilton 24",
+      "position": "D",
+      "cost": 25900000,
+      "war": 3.7
+    }
+  ]
+}

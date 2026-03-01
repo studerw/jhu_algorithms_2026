@@ -1,0 +1,335 @@
+{
+  "maximum_cost": 105800000,
+  "players": [
+    {
+      "name": "Gabriel Semien 0",
+      "position": "F",
+      "cost": 9200000,
+      "war": 5.9
+    },
+    {
+      "name": "Daniel Reynolds 1",
+      "position": "A",
+      "cost": 27400000,
+      "war": -0.1
+    },
+    {
+      "name": "Drew Gallo 2",
+      "position": "J",
+      "cost": 25100000,
+      "war": -0.2
+    },
+    {
+      "name": "Dylan Correa 3",
+      "position": "K",
+      "cost": 17700000,
+      "war": 2.0
+    },
+    {
+      "name": "Bryce Hernandez 4",
+      "position": "A",
+      "cost": 8000000,
+      "war": 8.3
+    },
+    {
+      "name": "Dominic Cano 5",
+      "position": "O",
+      "cost": 19300000,
+      "war": 0.3
+    },
+    {
+      "name": "Byron Castillo 6",
+      "position": "H",
+      "cost": 13300000,
+      "war": 3.1
+    },
+    {
+      "name": "Brett James 7",
+      "position": "C",
+      "cost": 26500000,
+      "war": 4.3
+    },
+    {
+      "name": "Matt Springer 8",
+      "position": "Q",
+      "cost": 28300000,
+      "war": 1.9
+    },
+    {
+      "name": "Scott Springer 9",
+      "position": "R",
+      "cost": 23600000,
+      "war": 0.5
+    },
+    {
+      "name": "Derek Kirk 10",
+      "position": "I",
+      "cost": 29200000,
+      "war": 1.1
+    },
+    {
+      "name": "Derek Cole 11",
+      "position": "C",
+      "cost": 29900000,
+      "war": 9.2
+    },
+    {
+      "name": "Abel Hill 12",
+      "position": "G",
+      "cost": 17100000,
+      "war": 4.4
+    },
+    {
+      "name": "Eduardo Sanchez 13",
+      "position": "A",
+      "cost": 28000000,
+      "war": 4.7
+    },
+    {
+      "name": "Darius Hernandez 14",
+      "position": "L",
+      "cost": 5700000,
+      "war": 9.5
+    },
+    {
+      "name": "Brandon Jackson 15",
+      "position": "M",
+      "cost": 2400000,
+      "war": 2.0
+    },
+    {
+      "name": "Hunter Clark 16",
+      "position": "H",
+      "cost": 3700000,
+      "war": 3.3
+    },
+    {
+      "name": "Felix Gordon 17",
+      "position": "R",
+      "cost": 16600000,
+      "war": 0.5
+    },
+    {
+      "name": "Spencer Cano 18",
+      "position": "V",
+      "cost": 21800000,
+      "war": -0.2
+    },
+    {
+      "name": "Sam Harper 19",
+      "position": "T",
+      "cost": 24600000,
+      "war": 1.4
+    },
+    {
+      "name": "Marcus Bryant 20",
+      "position": "M",
+      "cost": 18800000,
+      "war": 5.8
+    },
+    {
+      "name": "Ian Rojas 21",
+      "position": "L",
+      "cost": 26400000,
+      "war": 5.2
+    },
+    {
+      "name": "Ethan Gomez 22",
+      "position": "F",
+      "cost": 18800000,
+      "war": 8.1
+    },
+    {
+      "name": "Caleb Buxton 23",
+      "position": "U",
+      "cost": 17700000,
+      "war": -0.1
+    },
+    {
+      "name": "Nick Hoskins 24",
+      "position": "U",
+      "cost": 25400000,
+      "war": 1.3
+    },
+    {
+      "name": "Byron Benintendi 25",
+      "position": "L",
+      "cost": 27900000,
+      "war": 2.9
+    },
+    {
+      "name": "Isaac Turner 26",
+      "position": "C",
+      "cost": 10700000,
+      "war": 0.0
+    },
+    {
+      "name": "Luis Fernandez 27",
+      "position": "D",
+      "cost": 26000000,
+      "war": 0.7
+    },
+    {
+      "name": "Sam Martin 28",
+      "position": "S",
+      "cost": 30000000,
+      "war": 6.6
+    },
+    {
+      "name": "Trevor Meadows 29",
+      "position": "M",
+      "cost": 17600000,
+      "war": 8.0
+    },
+    {
+      "name": "Brandon Jimenez 30",
+      "position": "L",
+      "cost": 20000000,
+      "war": 2.5
+    },
+    {
+      "name": "Josh Gomez 31",
+      "position": "H",
+      "cost": 17800000,
+      "war": 3.9
+    },
+    {
+      "name": "Daniel Buxton 32",
+      "position": "S",
+      "cost": 8700000,
+      "war": -0.6
+    },
+    {
+      "name": "Spencer Suarez 33",
+      "position": "A",
+      "cost": 2500000,
+      "war": 8.2
+    },
+    {
+      "name": "Chris Hernandez 34",
+      "position": "H",
+      "cost": 16300000,
+      "war": 6.1
+    },
+    {
+      "name": "Alejandro Garcia 35",
+      "position": "M",
+      "cost": 17700000,
+      "war": 4.3
+    },
+    {
+      "name": "Diego Kirk 36",
+      "position": "L",
+      "cost": 22400000,
+      "war": 4.0
+    },
+    {
+      "name": "Eli Torres 37",
+      "position": "O",
+      "cost": 11100000,
+      "war": 3.8
+    },
+    {
+      "name": "Brian Jimenez 38",
+      "position": "N",
+      "cost": 27100000,
+      "war": 3.9
+    },
+    {
+      "name": "Salvador Jimenez 39",
+      "position": "S",
+      "cost": 14700000,
+      "war": -0.5
+    },
+    {
+      "name": "Shohei Cruz 40",
+      "position": "P",
+      "cost": 22200000,
+      "war": 5.5
+    },
+    {
+      "name": "Justin Harper 41",
+      "position": "O",
+      "cost": 30000000,
+      "war": 4.3
+    },
+    {
+      "name": "David Cruz 42",
+      "position": "C",
+      "cost": 13700000,
+      "war": 9.5
+    },
+    {
+      "name": "Angel Castillo 43",
+      "position": "S",
+      "cost": 15700000,
+      "war": 7.8
+    },
+    {
+      "name": "Jorge Pena 44",
+      "position": "D",
+      "cost": 26100000,
+      "war": 2.3
+    },
+    {
+      "name": "Felix Pollack 45",
+      "position": "J",
+      "cost": 20100000,
+      "war": 8.0
+    },
+    {
+      "name": "Sam Torres 46",
+      "position": "K",
+      "cost": 3600000,
+      "war": 7.3
+    },
+    {
+      "name": "Angel Dozier 47",
+      "position": "I",
+      "cost": 24700000,
+      "war": 5.6
+    },
+    {
+      "name": "Tanner Bell 48",
+      "position": "L",
+      "cost": 12400000,
+      "war": 9.7
+    },
+    {
+      "name": "Casey Aguilar 49",
+      "position": "T",
+      "cost": 24500000,
+      "war": 0.2
+    },
+    {
+      "name": "Gabriel Muncy 50",
+      "position": "S",
+      "cost": 19500000,
+      "war": 8.8
+    },
+    {
+      "name": "Javier Collins 51",
+      "position": "U",
+      "cost": 9800000,
+      "war": -0.1
+    },
+    {
+      "name": "Roberto Howard 52",
+      "position": "R",
+      "cost": 21700000,
+      "war": 2.0
+    },
+    {
+      "name": "Eduardo Jackson 53",
+      "position": "H",
+      "cost": 4700000,
+      "war": 3.0
+    },
+    {
+      "name": "Tanner Fernandez 54",
+      "position": "O",
+      "cost": 11200000,
+      "war": -0.3
+    }
+  ]
+}

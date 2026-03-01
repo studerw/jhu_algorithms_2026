@@ -1,0 +1,131 @@
+{
+  "maximum_cost": 39800000,
+  "players": [
+    {
+      "name": "Shohei Franco 0",
+      "position": "V",
+      "cost": 1200000,
+      "war": 1.1
+    },
+    {
+      "name": "Isaac Roberts 1",
+      "position": "K",
+      "cost": 12200000,
+      "war": 1.2
+    },
+    {
+      "name": "Rafael Dozier 2",
+      "position": "O",
+      "cost": 1900000,
+      "war": 7.4
+    },
+    {
+      "name": "Eli Vientos 3",
+      "position": "E",
+      "cost": 29200000,
+      "war": 8.2
+    },
+    {
+      "name": "Grant Sanchez 4",
+      "position": "N",
+      "cost": 25300000,
+      "war": 5.4
+    },
+    {
+      "name": "Angel Nunez 5",
+      "position": "E",
+      "cost": 100000,
+      "war": 2.6
+    },
+    {
+      "name": "Aaron Thompson 6",
+      "position": "Z",
+      "cost": 23300000,
+      "war": 2.1
+    },
+    {
+      "name": "Sam Devers 7",
+      "position": "Q",
+      "cost": 23800000,
+      "war": 0.4
+    },
+    {
+      "name": "Dominic James 8",
+      "position": "P",
+      "cost": 17100000,
+      "war": 6.9
+    },
+    {
+      "name": "Greg Thompson 9",
+      "position": "A",
+      "cost": 28600000,
+      "war": 6.5
+    },
+    {
+      "name": "Gerardo Beltran 10",
+      "position": "J",
+      "cost": 3100000,
+      "war": 4.4
+    },
+    {
+      "name": "Salvador Moore 11",
+      "position": "I",
+      "cost": 22500000,
+      "war": 2.5
+    },
+    {
+      "name": "Marcus Soto 12",
+      "position": "A",
+      "cost": 16800000,
+      "war": 7.9
+    },
+    {
+      "name": "David Thomas 13",
+      "position": "AA",
+      "cost": 26500000,
+      "war": 8.3
+    },
+    {
+      "name": "Ethan Lindor 14",
+      "position": "W",
+      "cost": 800000,
+      "war": 6.6
+    },
+    {
+      "name": "Tanner Green 15",
+      "position": "I",
+      "cost": 28000000,
+      "war": 0.1
+    },
+    {
+      "name": "Nick Miller 16",
+      "position": "Z",
+      "cost": 16600000,
+      "war": -0.5
+    },
+    {
+      "name": "Jose Perez 17",
+      "position": "N",
+      "cost": 17300000,
+      "war": 9.6
+    },
+    {
+      "name": "Nolan Soto 18",
+      "position": "D",
+      "cost": 25500000,
+      "war": 5.9
+    },
+    {
+      "name": "Darius King 19",
+      "position": "Q",
+      "cost": 3900000,
+      "war": 6.3
+    },
+    {
+      "name": "Byron Collins 20",
+      "position": "D",
+      "cost": 28300000,
+      "war": 5.1
+    }
+  ]
+}

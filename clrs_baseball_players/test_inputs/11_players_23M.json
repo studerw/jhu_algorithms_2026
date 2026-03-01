@@ -1,0 +1,71 @@
+{
+  "maximum_cost": 23600000,
+  "players": [
+    {
+      "name": "Joel Moore 0",
+      "position": "B",
+      "cost": 26200000,
+      "war": 0.6
+    },
+    {
+      "name": "Fernando Harper 1",
+      "position": "C",
+      "cost": 19500000,
+      "war": 1.7
+    },
+    {
+      "name": "Drew Lindor 2",
+      "position": "C",
+      "cost": 5500000,
+      "war": 1.2
+    },
+    {
+      "name": "Ricardo Rojas 3",
+      "position": "C",
+      "cost": 800000,
+      "war": 6.8
+    },
+    {
+      "name": "Fernando Jackson 4",
+      "position": "E",
+      "cost": 26400000,
+      "war": 1.0
+    },
+    {
+      "name": "Fernando Hill 5",
+      "position": "F",
+      "cost": 3900000,
+      "war": 5.2
+    },
+    {
+      "name": "Eli Machado 6",
+      "position": "D",
+      "cost": 3100000,
+      "war": 10.0
+    },
+    {
+      "name": "Julian Swanson 7",
+      "position": "A",
+      "cost": 6400000,
+      "war": 2.9
+    },
+    {
+      "name": "Clay Bregman 8",
+      "position": "H",
+      "cost": 20700000,
+      "war": 8.7
+    },
+    {
+      "name": "Juan Murphy 9",
+      "position": "I",
+      "cost": 16100000,
+      "war": 7.1
+    },
+    {
+      "name": "Kyle Muncy 10",
+      "position": "B",
+      "cost": 27100000,
+      "war": 1.1
+    }
+  ]
+}

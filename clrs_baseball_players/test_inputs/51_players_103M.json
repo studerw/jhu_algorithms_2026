@@ -1,0 +1,311 @@
+{
+  "maximum_cost": 103700000,
+  "players": [
+    {
+      "name": "Ian Doan 0",
+      "position": "M",
+      "cost": 12800000,
+      "war": 2.9
+    },
+    {
+      "name": "Miguel Reyes 1",
+      "position": "A",
+      "cost": 14300000,
+      "war": 2.9
+    },
+    {
+      "name": "Chris Lindor 2",
+      "position": "N",
+      "cost": 23900000,
+      "war": 10.0
+    },
+    {
+      "name": "Nolan Sanchez 3",
+      "position": "E",
+      "cost": 3800000,
+      "war": 3.0
+    },
+    {
+      "name": "Pedro Urshela 4",
+      "position": "K",
+      "cost": 10400000,
+      "war": 8.9
+    },
+    {
+      "name": "Casey Reyes 5",
+      "position": "N",
+      "cost": 14800000,
+      "war": 6.9
+    },
+    {
+      "name": "Freddie Harper 6",
+      "position": "K",
+      "cost": 28900000,
+      "war": 7.8
+    },
+    {
+      "name": "Lance Judge 7",
+      "position": "M",
+      "cost": 18000000,
+      "war": 2.0
+    },
+    {
+      "name": "Scott Smith 8",
+      "position": "H",
+      "cost": 1700000,
+      "war": 3.8
+    },
+    {
+      "name": "Josh Rogers 9",
+      "position": "D",
+      "cost": 20600000,
+      "war": 5.9
+    },
+    {
+      "name": "Joel Bryant 10",
+      "position": "M",
+      "cost": 29400000,
+      "war": 8.9
+    },
+    {
+      "name": "Emilio Villar 11",
+      "position": "O",
+      "cost": 18100000,
+      "war": 8.7
+    },
+    {
+      "name": "Anthony Davis 12",
+      "position": "N",
+      "cost": 1400000,
+      "war": 8.0
+    },
+    {
+      "name": "Caleb Castillo 13",
+      "position": "B",
+      "cost": 18700000,
+      "war": 3.5
+    },
+    {
+      "name": "Mookie Mitchell 14",
+      "position": "L",
+      "cost": 29000000,
+      "war": 4.0
+    },
+    {
+      "name": "Logan Fernandez 15",
+      "position": "C",
+      "cost": 25900000,
+      "war": 6.0
+    },
+    {
+      "name": "Omar Beltran 16",
+      "position": "C",
+      "cost": 28900000,
+      "war": 0.8
+    },
+    {
+      "name": "Rafael Lowe 17",
+      "position": "J",
+      "cost": 1100000,
+      "war": 5.0
+    },
+    {
+      "name": "Elias Taylor 18",
+      "position": "L",
+      "cost": 3400000,
+      "war": 7.5
+    },
+    {
+      "name": "Alex Cabrera 19",
+      "position": "E",
+      "cost": 14700000,
+      "war": 3.9
+    },
+    {
+      "name": "David Wilson 20",
+      "position": "M",
+      "cost": 28000000,
+      "war": 2.2
+    },
+    {
+      "name": "Derek Miller 21",
+      "position": "L",
+      "cost": 25500000,
+      "war": 9.1
+    },
+    {
+      "name": "Javier Lewis 22",
+      "position": "G",
+      "cost": 3100000,
+      "war": 5.9
+    },
+    {
+      "name": "Jack Springer 23",
+      "position": "M",
+      "cost": 21500000,
+      "war": 0.4
+    },
+    {
+      "name": "Gabriel Moore 24",
+      "position": "L",
+      "cost": 300000,
+      "war": 5.9
+    },
+    {
+      "name": "Trevor Hernandez 25",
+      "position": "O",
+      "cost": 9000000,
+      "war": 2.7
+    },
+    {
+      "name": "Jorge Ramirez 26",
+      "position": "D",
+      "cost": 7700000,
+      "war": 4.0
+    },
+    {
+      "name": "Brett Olson 27",
+      "position": "I",
+      "cost": 10500000,
+      "war": 6.8
+    },
+    {
+      "name": "Mookie Urias 28",
+      "position": "A",
+      "cost": 14700000,
+      "war": -0.2
+    },
+    {
+      "name": "Felix James 29",
+      "position": "N",
+      "cost": 21500000,
+      "war": 6.9
+    },
+    {
+      "name": "Drew Garcia 30",
+      "position": "J",
+      "cost": 17900000,
+      "war": 2.1
+    },
+    {
+      "name": "Bruno Nimmo 31",
+      "position": "B",
+      "cost": 10200000,
+      "war": 4.7
+    },
+    {
+      "name": "Greg Rojas 32",
+      "position": "O",
+      "cost": 26800000,
+      "war": -0.8
+    },
+    {
+      "name": "Elias Garcia 33",
+      "position": "A",
+      "cost": 1600000,
+      "war": 9.1
+    },
+    {
+      "name": "Angel Gonzalez 34",
+      "position": "H",
+      "cost": 20400000,
+      "war": 2.3
+    },
+    {
+      "name": "Matt Hernandez 35",
+      "position": "A",
+      "cost": 20800000,
+      "war": 1.7
+    },
+    {
+      "name": "Oscar Brown 36",
+      "position": "M",
+      "cost": 27500000,
+      "war": 8.3
+    },
+    {
+      "name": "Ramon Myers 37",
+      "position": "O",
+      "cost": 7300000,
+      "war": -0.8
+    },
+    {
+      "name": "Julian Bregman 38",
+      "position": "M",
+      "cost": 22100000,
+      "war": 7.0
+    },
+    {
+      "name": "Diego Moore 39",
+      "position": "I",
+      "cost": 16700000,
+      "war": 5.7
+    },
+    {
+      "name": "Anthony Gallo 40",
+      "position": "D",
+      "cost": 5100000,
+      "war": 7.7
+    },
+    {
+      "name": "Pedro Thomas 41",
+      "position": "N",
+      "cost": 10500000,
+      "war": 7.5
+    },
+    {
+      "name": "Patrick Miller 42",
+      "position": "G",
+      "cost": 6300000,
+      "war": 8.4
+    },
+    {
+      "name": "Elias Thomas 43",
+      "position": "E",
+      "cost": 14100000,
+      "war": 3.2
+    },
+    {
+      "name": "Andre Garcia 44",
+      "position": "I",
+      "cost": 11400000,
+      "war": 9.2
+    },
+    {
+      "name": "Nolan Gordon 45",
+      "position": "A",
+      "cost": 13800000,
+      "war": 6.2
+    },
+    {
+      "name": "Miguel Suarez 46",
+      "position": "E",
+      "cost": 24800000,
+      "war": 0.7
+    },
+    {
+      "name": "Chad Vientos 47",
+      "position": "A",
+      "cost": 1600000,
+      "war": 3.4
+    },
+    {
+      "name": "James Roberts 48",
+      "position": "I",
+      "cost": 13000000,
+      "war": 5.4
+    },
+    {
+      "name": "Aaron Gomez 49",
+      "position": "G",
+      "cost": 26600000,
+      "war": 1.6
+    },
+    {
+      "name": "Grant Dozier 50",
+      "position": "K",
+      "cost": 27500000,
+      "war": 8.4
+    }
+  ]
+}

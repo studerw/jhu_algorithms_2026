@@ -1,0 +1,107 @@
+{
+  "maximum_cost": 34900000,
+  "players": [
+    {
+      "name": "Marcus Springer 0",
+      "position": "C",
+      "cost": 10700000,
+      "war": -0.2
+    },
+    {
+      "name": "Daniel Bregman 1",
+      "position": "F",
+      "cost": 12400000,
+      "war": 0.2
+    },
+    {
+      "name": "Emilio Rodriguez 2",
+      "position": "E",
+      "cost": 6700000,
+      "war": 0.8
+    },
+    {
+      "name": "Lorenzo Suarez 3",
+      "position": "E",
+      "cost": 26100000,
+      "war": 2.5
+    },
+    {
+      "name": "Adrian Rivera 4",
+      "position": "H",
+      "cost": 20000000,
+      "war": 1.6
+    },
+    {
+      "name": "Andre Rojas 5",
+      "position": "F",
+      "cost": 14700000,
+      "war": 4.4
+    },
+    {
+      "name": "Pablo Betts 6",
+      "position": "G",
+      "cost": 18400000,
+      "war": 0.9
+    },
+    {
+      "name": "Pablo Johnson 7",
+      "position": "C",
+      "cost": 19100000,
+      "war": 8.3
+    },
+    {
+      "name": "Juan White 8",
+      "position": "H",
+      "cost": 21900000,
+      "war": 7.9
+    },
+    {
+      "name": "Dale Howard 9",
+      "position": "I",
+      "cost": 2300000,
+      "war": 9.2
+    },
+    {
+      "name": "Jose Gordon 10",
+      "position": "D",
+      "cost": 2500000,
+      "war": 9.4
+    },
+    {
+      "name": "Jason Hall 11",
+      "position": "C",
+      "cost": 19800000,
+      "war": 5.1
+    },
+    {
+      "name": "Bruno Springer 12",
+      "position": "F",
+      "cost": 11800000,
+      "war": 2.7
+    },
+    {
+      "name": "Clay Howard 13",
+      "position": "C",
+      "cost": 9500000,
+      "war": 8.2
+    },
+    {
+      "name": "Evan Semien 14",
+      "position": "A",
+      "cost": 16000000,
+      "war": 2.0
+    },
+    {
+      "name": "Andre Swanson 15",
+      "position": "F",
+      "cost": 16600000,
+      "war": 3.3
+    },
+    {
+      "name": "Jake Collins 16",
+      "position": "I",
+      "cost": 5900000,
+      "war": -0.7
+    }
+  ]
+}

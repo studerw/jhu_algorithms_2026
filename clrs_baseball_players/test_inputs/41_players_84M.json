@@ -1,0 +1,251 @@
+{
+  "maximum_cost": 84700000,
+  "players": [
+    {
+      "name": "Connor Wilson 0",
+      "position": "D",
+      "cost": 23800000,
+      "war": 6.6
+    },
+    {
+      "name": "Patrick Brown 1",
+      "position": "J",
+      "cost": 2300000,
+      "war": 0.7
+    },
+    {
+      "name": "Rafael James 2",
+      "position": "V",
+      "cost": 16200000,
+      "war": -0.1
+    },
+    {
+      "name": "Corey Duran 3",
+      "position": "U",
+      "cost": 8400000,
+      "war": 8.3
+    },
+    {
+      "name": "Mookie Franco 4",
+      "position": "X",
+      "cost": 21300000,
+      "war": 4.0
+    },
+    {
+      "name": "Jake King 5",
+      "position": "E",
+      "cost": 24200000,
+      "war": 8.1
+    },
+    {
+      "name": "Kevin Urias 6",
+      "position": "B",
+      "cost": 28900000,
+      "war": 5.5
+    },
+    {
+      "name": "Ian Machado 7",
+      "position": "U",
+      "cost": 6100000,
+      "war": 9.2
+    },
+    {
+      "name": "Nathan Machado 8",
+      "position": "F",
+      "cost": 23300000,
+      "war": 6.0
+    },
+    {
+      "name": "Gerardo Anderson 9",
+      "position": "S",
+      "cost": 21100000,
+      "war": -0.2
+    },
+    {
+      "name": "Hunter Leon 10",
+      "position": "J",
+      "cost": 11000000,
+      "war": 8.9
+    },
+    {
+      "name": "Scott Rojas 11",
+      "position": "U",
+      "cost": 1500000,
+      "war": 9.7
+    },
+    {
+      "name": "Caleb Miller 12",
+      "position": "P",
+      "cost": 23000000,
+      "war": 3.6
+    },
+    {
+      "name": "Tanner Diaz 13",
+      "position": "H",
+      "cost": 24500000,
+      "war": 1.9
+    },
+    {
+      "name": "Mookie Galvis 14",
+      "position": "S",
+      "cost": 2500000,
+      "war": 4.3
+    },
+    {
+      "name": "Chris Lindor 15",
+      "position": "H",
+      "cost": 17400000,
+      "war": -0.5
+    },
+    {
+      "name": "Bruno Nimmo 16",
+      "position": "N",
+      "cost": 13700000,
+      "war": 2.9
+    },
+    {
+      "name": "Joel Reyes 17",
+      "position": "E",
+      "cost": 5400000,
+      "war": 7.1
+    },
+    {
+      "name": "Bruno Miller 18",
+      "position": "E",
+      "cost": 19300000,
+      "war": 2.0
+    },
+    {
+      "name": "Mookie Stanton 19",
+      "position": "U",
+      "cost": 22600000,
+      "war": 0.8
+    },
+    {
+      "name": "Trevor Beltran 20",
+      "position": "Y",
+      "cost": 6900000,
+      "war": 5.4
+    },
+    {
+      "name": "Marcus Cano 21",
+      "position": "D",
+      "cost": 11300000,
+      "war": 6.6
+    },
+    {
+      "name": "Roberto Bryant 22",
+      "position": "A",
+      "cost": 7500000,
+      "war": 3.7
+    },
+    {
+      "name": "Damian Myers 23",
+      "position": "P",
+      "cost": 18600000,
+      "war": 3.2
+    },
+    {
+      "name": "Mookie Gomez 24",
+      "position": "Z",
+      "cost": 10800000,
+      "war": 7.5
+    },
+    {
+      "name": "Josh Myers 25",
+      "position": "X",
+      "cost": 19200000,
+      "war": 6.5
+    },
+    {
+      "name": "Pablo Bryant 26",
+      "position": "Q",
+      "cost": 15800000,
+      "war": 4.6
+    },
+    {
+      "name": "Garrett Davis 27",
+      "position": "AB",
+      "cost": 27700000,
+      "war": 5.3
+    },
+    {
+      "name": "Leo Murphy 28",
+      "position": "Y",
+      "cost": 5000000,
+      "war": 2.2
+    },
+    {
+      "name": "Cole Rogers 29",
+      "position": "F",
+      "cost": 13400000,
+      "war": 6.0
+    },
+    {
+      "name": "Nick Nido 30",
+      "position": "W",
+      "cost": 18400000,
+      "war": 3.7
+    },
+    {
+      "name": "Emilio Collins 31",
+      "position": "F",
+      "cost": 8700000,
+      "war": 3.5
+    },
+    {
+      "name": "Dylan Nimmo 32",
+      "position": "X",
+      "cost": 5700000,
+      "war": 5.6
+    },
+    {
+      "name": "Luis Turner 33",
+      "position": "H",
+      "cost": 1200000,
+      "war": 8.2
+    },
+    {
+      "name": "Darius Santana 34",
+      "position": "X",
+      "cost": 3000000,
+      "war": 7.4
+    },
+    {
+      "name": "Colin Rodriguez 35",
+      "position": "Y",
+      "cost": 16600000,
+      "war": 5.7
+    },
+    {
+      "name": "Mario Thompson 36",
+      "position": "N",
+      "cost": 6600000,
+      "war": 0.0
+    },
+    {
+      "name": "Kyle Cole 37",
+      "position": "F",
+      "cost": 7500000,
+      "war": 3.3
+    },
+    {
+      "name": "Jalen Flores 38",
+      "position": "J",
+      "cost": 28400000,
+      "war": 4.3
+    },
+    {
+      "name": "Daniel Hoskins 39",
+      "position": "X",
+      "cost": 2200000,
+      "war": 9.0
+    },
+    {
+      "name": "Ivan Rogers 40",
+      "position": "B",
+      "cost": 1200000,
+      "war": 7.0
+    }
+  ]
+}

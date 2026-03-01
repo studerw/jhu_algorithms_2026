@@ -1,0 +1,179 @@
+{
+  "maximum_cost": 55300000,
+  "players": [
+    {
+      "name": "Ricardo Garcia 0",
+      "position": "M",
+      "cost": 3600000,
+      "war": 8.8
+    },
+    {
+      "name": "Jesse Pena 1",
+      "position": "N",
+      "cost": 25600000,
+      "war": 7.3
+    },
+    {
+      "name": "Abel Rosario 2",
+      "position": "U",
+      "cost": 14100000,
+      "war": 4.5
+    },
+    {
+      "name": "Drew Thompson 3",
+      "position": "X",
+      "cost": 3500000,
+      "war": 4.0
+    },
+    {
+      "name": "Gavin Mitchell 4",
+      "position": "D",
+      "cost": 15300000,
+      "war": 6.1
+    },
+    {
+      "name": "Ethan Reyes 5",
+      "position": "F",
+      "cost": 11500000,
+      "war": 9.6
+    },
+    {
+      "name": "Jose Molina 6",
+      "position": "H",
+      "cost": 2300000,
+      "war": 4.4
+    },
+    {
+      "name": "Juan Lindor 7",
+      "position": "A",
+      "cost": 8700000,
+      "war": 2.6
+    },
+    {
+      "name": "Casey James 8",
+      "position": "J",
+      "cost": 16000000,
+      "war": 2.5
+    },
+    {
+      "name": "Mookie Springer 9",
+      "position": "I",
+      "cost": 15300000,
+      "war": 3.1
+    },
+    {
+      "name": "Salvador Cano 10",
+      "position": "N",
+      "cost": 23500000,
+      "war": -0.1
+    },
+    {
+      "name": "Dale Olson 11",
+      "position": "H",
+      "cost": 23100000,
+      "war": 6.7
+    },
+    {
+      "name": "Caleb Meadows 12",
+      "position": "I",
+      "cost": 9500000,
+      "war": 8.2
+    },
+    {
+      "name": "Jesse Muncy 13",
+      "position": "C",
+      "cost": 10200000,
+      "war": 8.0
+    },
+    {
+      "name": "Sam Harris 14",
+      "position": "R",
+      "cost": 22700000,
+      "war": 7.0
+    },
+    {
+      "name": "Ricardo Guerrero 15",
+      "position": "Q",
+      "cost": 11700000,
+      "war": 7.8
+    },
+    {
+      "name": "Cole Reynolds 16",
+      "position": "S",
+      "cost": 24900000,
+      "war": 8.6
+    },
+    {
+      "name": "Taylor Walsh 17",
+      "position": "B",
+      "cost": 7500000,
+      "war": 4.9
+    },
+    {
+      "name": "Eli Reynolds 18",
+      "position": "U",
+      "cost": 26600000,
+      "war": 1.7
+    },
+    {
+      "name": "Greg Miller 19",
+      "position": "W",
+      "cost": 20500000,
+      "war": -0.9
+    },
+    {
+      "name": "Santiago Jimenez 20",
+      "position": "N",
+      "cost": 14500000,
+      "war": 0.7
+    },
+    {
+      "name": "Rafael Meadows 21",
+      "position": "A",
+      "cost": 27900000,
+      "war": 6.1
+    },
+    {
+      "name": "Aaron King 22",
+      "position": "P",
+      "cost": 12400000,
+      "war": 3.0
+    },
+    {
+      "name": "Felix Harris 23",
+      "position": "U",
+      "cost": 18400000,
+      "war": 4.6
+    },
+    {
+      "name": "Gavin Wilson 24",
+      "position": "C",
+      "cost": 14300000,
+      "war": 8.1
+    },
+    {
+      "name": "Sam Doan 25",
+      "position": "E",
+      "cost": 11600000,
+      "war": 1.2
+    },
+    {
+      "name": "Jose Kim 26",
+      "position": "J",
+      "cost": 15500000,
+      "war": 5.3
+    },
+    {
+      "name": "Leo Carter 27",
+      "position": "H",
+      "cost": 14900000,
+      "war": 9.7
+    },
+    {
+      "name": "Eric Chapman 28",
+      "position": "K",
+      "cost": 4100000,
+      "war": 8.2
+    }
+  ]
+}

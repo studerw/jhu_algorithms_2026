@@ -1,0 +1,167 @@
+{
+  "maximum_cost": 46900000,
+  "players": [
+    {
+      "name": "Anthony Martin 0",
+      "position": "N",
+      "cost": 14700000,
+      "war": -0.1
+    },
+    {
+      "name": "Leo Taylor 1",
+      "position": "R",
+      "cost": 17500000,
+      "war": 4.2
+    },
+    {
+      "name": "Evan Doan 2",
+      "position": "K",
+      "cost": 20100000,
+      "war": 6.0
+    },
+    {
+      "name": "Abel Devers 3",
+      "position": "G",
+      "cost": 16700000,
+      "war": 2.2
+    },
+    {
+      "name": "Cole Ramirez 4",
+      "position": "Q",
+      "cost": 28300000,
+      "war": 8.7
+    },
+    {
+      "name": "Nathan Howard 5",
+      "position": "R",
+      "cost": 26900000,
+      "war": 8.1
+    },
+    {
+      "name": "Jose Springer 6",
+      "position": "V",
+      "cost": 8100000,
+      "war": 1.4
+    },
+    {
+      "name": "Ian Lopez 7",
+      "position": "R",
+      "cost": 15300000,
+      "war": 5.0
+    },
+    {
+      "name": "Jesse Pollack 8",
+      "position": "H",
+      "cost": 25100000,
+      "war": 8.3
+    },
+    {
+      "name": "Jose Gonzalez 9",
+      "position": "O",
+      "cost": 5000000,
+      "war": 9.1
+    },
+    {
+      "name": "Ivan Rivera 10",
+      "position": "V",
+      "cost": 10400000,
+      "war": 8.1
+    },
+    {
+      "name": "Taylor Sanchez 11",
+      "position": "B",
+      "cost": 15000000,
+      "war": 8.1
+    },
+    {
+      "name": "Drew Contreras 12",
+      "position": "H",
+      "cost": 19100000,
+      "war": 4.3
+    },
+    {
+      "name": "Darius Gonzalez 13",
+      "position": "O",
+      "cost": 6700000,
+      "war": -0.7
+    },
+    {
+      "name": "Kyle King 14",
+      "position": "K",
+      "cost": 7100000,
+      "war": 8.4
+    },
+    {
+      "name": "Chad Cole 15",
+      "position": "M",
+      "cost": 28300000,
+      "war": 5.4
+    },
+    {
+      "name": "Chad Johnson 16",
+      "position": "V",
+      "cost": 19300000,
+      "war": 8.7
+    },
+    {
+      "name": "Josh Reynolds 17",
+      "position": "D",
+      "cost": 23100000,
+      "war": 3.8
+    },
+    {
+      "name": "Cole Alvarez 18",
+      "position": "S",
+      "cost": 16200000,
+      "war": 6.6
+    },
+    {
+      "name": "Josh Kim 19",
+      "position": "I",
+      "cost": 4400000,
+      "war": 6.8
+    },
+    {
+      "name": "Jason Henderson 20",
+      "position": "P",
+      "cost": 11900000,
+      "war": 9.6
+    },
+    {
+      "name": "Eli Henderson 21",
+      "position": "F",
+      "cost": 7000000,
+      "war": -0.2
+    },
+    {
+      "name": "Kyle Adams 22",
+      "position": "G",
+      "cost": 28300000,
+      "war": 2.3
+    },
+    {
+      "name": "Daniel Doan 23",
+      "position": "B",
+      "cost": 23800000,
+      "war": 5.4
+    },
+    {
+      "name": "Gabriel Sanchez 24",
+      "position": "L",
+      "cost": 14700000,
+      "war": 8.1
+    },
+    {
+      "name": "Diego Martinez 25",
+      "position": "P",
+      "cost": 19700000,
+      "war": 1.7
+    },
+    {
+      "name": "Tanner Martinez 26",
+      "position": "T",
+      "cost": 14000000,
+      "war": 1.9
+    }
+  ]
+}

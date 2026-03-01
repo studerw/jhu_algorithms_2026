@@ -12,6 +12,36 @@ import random
 import string
 import sys
 
+FIRST_NAMES = [
+    "Aaron", "Abel", "Adam", "Adrian", "Alejandro", "Alex", "Andre", "Angel", "Anthony", "Antonio",
+    "Bryce", "Brandon", "Brett", "Brian", "Bruno", "Byron", "Caleb", "Carlos", "Casey", "Chad",
+    "Chris", "Clay", "Cole", "Colin", "Connor", "Corey", "Curtis", "Dale", "Damian", "Daniel",
+    "Darius", "David", "Derek", "Diego", "Dominic", "Drew", "Dylan", "Eduardo", "Eli", "Elias",
+    "Emilio", "Eric", "Ethan", "Evan", "Felix", "Fernando", "Freddie", "Gabriel", "Garrett", "Gavin",
+    "Gerardo", "Grant", "Greg", "Hector", "Hunter", "Ian", "Isaac", "Ivan", "Jack", "Jacob",
+    "Jake", "Jalen", "James", "Jason", "Javier", "Jesse", "Joel", "Jorge", "Jose", "Josh",
+    "Juan", "Julian", "Justin", "Kevin", "Kyle", "Lance", "Leo", "Logan", "Lorenzo", "Lucas",
+    "Luis", "Marcus", "Mario", "Matt", "Miguel", "Mike", "Mookie", "Nathan", "Nick", "Nolan",
+    "Omar", "Oscar", "Pablo", "Patrick", "Pedro", "Rafael", "Ramon", "Ricardo", "Roberto", "Ryan",
+    "Salvador", "Sam", "Santiago", "Scott", "Sean", "Shohei", "Spencer", "Tanner", "Taylor", "Trevor",
+]
+
+LAST_NAMES = [
+    "Acosta", "Adams", "Aguilar", "Alvarez", "Anderson", "Bautista", "Bell", "Beltran", "Benintendi", "Betts",
+    "Bogaerts", "Bregman", "Brown", "Bryant", "Buxton", "Cabrera", "Cano", "Carter", "Castillo", "Chapman",
+    "Clark", "Cole", "Collins", "Contreras", "Cooper", "Correa", "Crawford", "Cruz", "Davis", "Devers",
+    "Diaz", "Doan", "Donaldson", "Dozier", "Duran", "Estrada", "Farmer", "Fernandez", "Flores", "Franco",
+    "Freeman", "Galvis", "Garcia", "Gallo", "Goldschmidt", "Gomez", "Gonzalez", "Gordon", "Green", "Guerrero",
+    "Hall", "Hamilton", "Harper", "Harris", "Henderson", "Hernandez", "Hill", "Hoskins", "Howard", "Jackson",
+    "James", "Jimenez", "Johnson", "Jones", "Judge", "Kim", "King", "Kirk", "Lee", "Leon",
+    "Lewis", "Lindor", "Lopez", "Lowe", "Machado", "Martin", "Martinez", "Meadows", "Merrifield", "Miller",
+    "Mitchell", "Molina", "Moore", "Morales", "Muncy", "Murphy", "Myers", "Nido", "Nimmo", "Nunez",
+    "Olson", "Ortiz", "Ozuna", "Pena", "Perez", "Pollack", "Ramirez", "Reyes", "Reynolds", "Rivera",
+    "Roberts", "Rodriguez", "Rogers", "Rojas", "Rosario", "Sanchez", "Santana", "Semien", "Smith", "Soto",
+    "Springer", "Stanton", "Suarez", "Swanson", "Tatis", "Taylor", "Thomas", "Thompson", "Torres", "Turner",
+    "Urias", "Urshela", "Vientos", "Villar", "Voit", "Walker", "Walsh", "White", "Williams", "Wilson",
+]
+
 
 def generate_positions() -> list[str]:
     count = random.randint(9, 30)
@@ -30,18 +60,20 @@ def generate_positions() -> list[str]:
     return all_labels
 
 
-FIRST_NAMES = ["Carlos", "Mike", "Jake", "Luis", "Aaron", "Shohei", "Freddie", "Mookie", "Nolan", "Bryce"]
-LAST_NAMES = ["Smith", "Johnson", "Garcia", "Martinez", "Rodriguez", "Lopez", "Hernandez", "Lee", "Walker", "Hall"]
+def generate_names(n: int) -> list[str]:
+    all_combos = [f"{f} {l}" for f in FIRST_NAMES for l in LAST_NAMES]
+    random.shuffle(all_combos)
+    names: list[str] = []
+    for i in range(n):
+        names.append(all_combos[i % len(all_combos)])
+    return names
 
 
-def random_player(index: int, positions: list[str]) -> dict[str, object]:
-    first = random.choice(FIRST_NAMES)
-    last = random.choice(LAST_NAMES)
-    name = f"{first} {last} {index}"
+def random_player(name: str, index: int, positions: list[str]) -> dict[str, object]:
     position = random.choice(positions)
     cost = random.randint(1, 300) * 100_000
     war = round(random.uniform(-1.0, 10.0), 1)
-    return {"name": name, "position": position, "cost": cost, "war": war}
+    return {"name": f"{name} {index}", "position": position, "cost": cost, "war": war}
 
 
 def ensure_total_exceeds_budget(
@@ -51,7 +83,7 @@ def ensure_total_exceeds_budget(
     if total > maximum_cost:
         return players
 
-    shortfall = maximum_cost - total + 100_000  # overshoot by one unit
+    shortfall = maximum_cost - total + 100_000
     while shortfall > 0:
         target = random.randrange(len(players))
         bump = min(shortfall, random.randint(1, 10) * 100_000)
@@ -87,7 +119,8 @@ def main() -> None:
         sys.exit(1)
 
     positions = generate_positions()
-    players = [random_player(i, positions) for i in range(n)]
+    names = generate_names(n)
+    players = [random_player(names[i], i, positions) for i in range(n)]
     players = ensure_total_exceeds_budget(players, maximum_cost)
 
     output = {"maximum_cost": maximum_cost, "players": players}
