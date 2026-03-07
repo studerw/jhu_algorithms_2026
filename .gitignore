@@ -22,3 +22,4 @@ build/
 .java-version
 jhu_algorithms_2026.iml
 *.class
+/median-of-three/test_input/
