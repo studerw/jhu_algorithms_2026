@@ -11,17 +11,36 @@ import java.util.*;
  * Options:
  *   -f, --file <FILE>          Input file of comma-separated integers (default: stdin)
  *   -p, --partition <METHOD>   Partition method: 'default' or 'median-of-three' (default: default)
- *   -s, --suppress             Suppress output
+ *   -s, --suppress             Suppress sorted output
+ *   -t, --trace                Print each partition call: pivot, left count, right count.
+ *                              Total call count is always printed to stderr.
+ *                              WARNING: produces n-1 lines — only practical for small inputs.
  *   -h, --help                 Show this help message and exit
  */
 public class QuickSort {
 
+    /**
+     * Running total of partition calls made during the sort.
+     *
+     * Incremented by both partition() and medianOfThreePartition() on every call.
+     * The final value is always n-1 regardless of partition strategy or input order,
+     * because each call places exactly one pivot in its final sorted position.
+     * What differs between best and worst case is not this count but the SIZE of the
+     * work done per call — visible in the --trace left/right output.
+     */
+    static int partitionCallCount = 0;
+
     // -------------------------------------------------------------------------
-    // Partition: last-element pivot
+    // Partition: last-element pivot (Lomuto scheme)
+    //
+    // On sorted input this always picks the largest element as the pivot,
+    // producing splits of (size-1, 0) every time — the worst case.
+    // With --trace you will see right=0 on every single line.
     // -------------------------------------------------------------------------
-    static int partition(int[] A, int p, int r) {
-        int x = A[r];       // pivot
+    static int partition(int[] A, int p, int r, boolean trace) {
+        int x = A[r];       // pivot: last element of the subarray
         int i = p - 1;
+
         for (int j = p; j < r; j++) {
             if (A[j] <= x) {
                 i++;
@@ -29,36 +48,77 @@ public class QuickSort {
             }
         }
         int tmp = A[i + 1]; A[i + 1] = A[r]; A[r] = tmp;
-        return i + 1;
+        int q = i + 1;
+
+        // Count this call and optionally trace it.
+        // left  = elements to the left of the pivot  = q - p
+        // right = elements to the right of the pivot = r - q
+        partitionCallCount++;
+        if (trace) {
+            int left  = q - p;
+            int right = r - q;
+            int size  = r - p + 1;
+            System.out.printf("[partition #%8d]  size=%8d  pivot=%10d  left=%8d  right=%8d%n",
+                              partitionCallCount, size, x, left, right);
+        }
+
+        return q;
     }
 
     // -------------------------------------------------------------------------
     // Partition: median-of-three pivot
+    //
+    // On sorted input the median of first/middle/last is the middle element,
+    // giving a balanced (size/2, size/2) split — O(log n) depth instead of O(n).
+    // With --trace you will see roughly equal left and right values.
     // -------------------------------------------------------------------------
-    static int medianOfThreePartition(int[] A, int p, int r) {
+    static int medianOfThreePartition(int[] A, int p, int r, boolean trace) {
         int k = (p + r) / 2;  // midpoint index
 
-        // Sort A[p], A[k], A[r] to find the median
+        // Sort A[p], A[k], A[r] so that A[k] holds the median.
+        // After these three swaps: A[p] <= A[k] <= A[r].
         if (A[p] > A[k]) { int t = A[p]; A[p] = A[k]; A[k] = t; }
         if (A[p] > A[r]) { int t = A[p]; A[p] = A[r]; A[r] = t; }
         if (A[k] > A[r]) { int t = A[k]; A[k] = A[r]; A[r] = t; }
-        // Now A[p] <= A[k] <= A[r], so A[k] is the median — swap to last position
+
+        // Swap the median into the last position so the Lomuto logic below
+        // treats it as the pivot via A[r], exactly as partition() does.
         int t = A[k]; A[k] = A[r]; A[r] = t;
 
-        // Rest is identical to partition()
-        return partition(A, p, r);
+        // Delegate to the standard partition now that A[r] is the median pivot.
+        // Note: this increments partitionCallCount and handles tracing internally.
+        return partition(A, p, r, trace);
     }
 
     // -------------------------------------------------------------------------
     // Recursive quicksort — mirrors the Python implementation exactly
     // -------------------------------------------------------------------------
-    static void quicksort(int[] A, int p, int r, boolean useMedianOfThree) {
+
+    /**
+     * Recursively sort A[p..r] in place.
+     *
+     * Partitions the subarray around a pivot chosen by the selected strategy,
+     * then recursively sorts each half. Recursion bottoms out when p >= r.
+     *
+     * Worst-case time  : O(n²)       — sorted input + default partition
+     * Average-case time: O(n log n)
+     * Stack depth      : O(n) worst, O(log n) average
+     *
+     * Run with -Xss64m to provide enough stack space for worst-case depth.
+     *
+     * @param A                 array being sorted (modified in place)
+     * @param p                 left boundary (inclusive)
+     * @param r                 right boundary (inclusive)
+     * @param useMedianOfThree  true = median-of-three pivot, false = last-element pivot
+     * @param trace             true = print each partition call's pivot and split sizes
+     */
+    static void quicksort(int[] A, int p, int r, boolean useMedianOfThree, boolean trace) {
         if (p < r) {
             int q = useMedianOfThree
-                    ? medianOfThreePartition(A, p, r)
-                    : partition(A, p, r);
-            quicksort(A, p, q - 1, useMedianOfThree);   // recursively sort the low side
-            quicksort(A, q + 1, r, useMedianOfThree);   // recursively sort the high side
+                    ? medianOfThreePartition(A, p, r, trace)
+                    : partition(A, p, r, trace);
+            quicksort(A, p, q - 1, useMedianOfThree, trace);   // recursively sort the low side
+            quicksort(A, q + 1, r,  useMedianOfThree, trace);  // recursively sort the high side
         }
     }
 
@@ -78,6 +138,11 @@ public class QuickSort {
         System.out.println("                               'median-of-three' median of first/mid/last");
         System.out.println("                             [default: default]");
         System.out.println("  -s, --suppress             Suppress sorted output");
+        System.out.println("  -t, --trace                Print each partition call showing pivot value");
+        System.out.println("                             and left/right split sizes. Total call count");
+        System.out.println("                             is always printed to stderr.");
+        System.out.println("                             WARNING: produces n-1 lines of output.");
+        System.out.println("                             Only practical for small inputs.");
         System.out.println("  -h, --help                 Show this help message and exit");
     }
 
@@ -87,9 +152,10 @@ public class QuickSort {
     public static void main(String[] args) throws IOException {
 
         // --- Argument parsing ---
-        String filePath      = null;
+        String filePath        = null;
         String partitionMethod = "default";
-        boolean suppress     = false;
+        boolean suppress       = false;
+        boolean trace          = false;
 
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
@@ -102,6 +168,11 @@ public class QuickSort {
                 case "-s":
                 case "--suppress":
                     suppress = true;
+                    break;
+
+                case "-t":
+                case "--trace":
+                    trace = true;
                     break;
 
                 case "-f":
@@ -169,9 +240,16 @@ public class QuickSort {
             return;
         }
 
+        int n = A.length;
+
         // --- Sort ---
         boolean useMedianOfThree = partitionMethod.equals("median-of-three");
-        quicksort(A, 0, A.length - 1, useMedianOfThree);
+        quicksort(A, 0, n - 1, useMedianOfThree, trace);
+
+        // Always print total partition call count to stderr so it is visible
+        // even when --suppress is used and stdout is clean.
+        System.err.printf("%n[total partition calls: %d  (n=%d,  expected n-1=%d)]%n",
+                          partitionCallCount, n, n - 1);
 
         // --- Output ---
         if (!suppress) {

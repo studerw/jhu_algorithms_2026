@@ -9,7 +9,7 @@ Two partition strategies are available:
                         more balanced
 
 Usage:
-  python quicksort.py [-f FILE] [-p METHOD] [-s]
+  python quicksort.py [-f FILE] [-p METHOD] [-s] [-t]
 
 To handle very large inputs without hitting Python's recursion limit, the program
 raises sys.setrecursionlimit and runs inside a dedicated thread with a much larger
@@ -27,7 +27,7 @@ import threading
 sys.setrecursionlimit(1000000)
 
 
-def median_of_three_partition(A, p, r):
+def median_of_three_partition(A, p, r, trace, counter):
     """
     Partition A[p..r] using the median of A[p], A[midpoint], and A[r] as the pivot.
 
@@ -39,9 +39,12 @@ def median_of_three_partition(A, p, r):
     array much more evenly, keeping recursion depth closer to O(log n).
 
     Args:
-        A: list of integers being sorted (modified in place)
-        p: left boundary index (inclusive)
-        r: right boundary index (inclusive), where the pivot will be placed
+        A:       list of integers being sorted (modified in place)
+        p:       left boundary index (inclusive)
+        r:       right boundary index (inclusive), where the pivot will be placed
+        trace:   if True, print pivot and partition sizes for each call
+        counter: a one-element list [n] used to count total partition calls
+                 (a list is used so the integer is mutable across recursive calls)
 
     Returns:
         The final index of the pivot after partitioning.
@@ -69,10 +72,23 @@ def median_of_three_partition(A, p, r):
             i += 1
             A[i], A[j] = A[j], A[i]
     A[i + 1], A[r] = A[r], A[i + 1]
-    return i + 1
+    q = i + 1
+
+    # Count this partition call and optionally trace it.
+    # left  = number of elements to the left of the pivot  = q - p
+    # right = number of elements to the right of the pivot = r - q
+    # A perfectly balanced split has left ≈ right ≈ size/2.
+    counter[0] += 1
+    if trace:
+        left  = q - p
+        right = r - q
+        size  = r - p + 1
+        print(f"[partition #{counter[0]:>8}]  size={size:>8}  pivot={x:>10}  left={left:>8}  right={right:>8}")
+
+    return q
 
 
-def partition(A, p, r):
+def partition(A, p, r, trace, counter):
     """
     Partition A[p..r] in place around the last element A[r] as the pivot.
 
@@ -85,10 +101,15 @@ def partition(A, p, r):
     is always the largest (or smallest) element, producing maximally unbalanced
     partitions and O(n) recursion depth.
 
+    With --trace on a sorted input you will see left=size-1, right=0 on every
+    single call, visually demonstrating why this degrades to O(n²).
+
     Args:
-        A: list of integers being sorted (modified in place)
-        p: left boundary index (inclusive)
-        r: right boundary index (inclusive); A[r] is used as the pivot
+        A:       list of integers being sorted (modified in place)
+        p:       left boundary index (inclusive)
+        r:       right boundary index (inclusive); A[r] is used as the pivot
+        trace:   if True, print pivot and partition sizes for each call
+        counter: a one-element list [n] used to count total partition calls
 
     Returns:
         The final index of the pivot after partitioning.
@@ -103,10 +124,23 @@ def partition(A, p, r):
 
     # Place the pivot immediately to the right of the low side
     A[i + 1], A[r] = A[r], A[i + 1]
-    return i + 1                       # return the pivot's final position
+    q = i + 1
+
+    # Count this partition call and optionally trace it.
+    # On sorted input with this partition function, x will always be the largest
+    # element in the subarray, so right will always be 0 — a maximally unbalanced
+    # split that forces O(n) recursive calls instead of O(log n).
+    counter[0] += 1
+    if trace:
+        left  = q - p
+        right = r - q
+        size  = r - p + 1
+        print(f"[partition #{counter[0]:>8}]  size={size:>8}  pivot={x:>10}  left={left:>8}  right={right:>8}")
+
+    return q
 
 
-def quicksort(A, p, r, partition_fn):
+def quicksort(A, p, r, partition_fn, trace, counter):
     """
     Recursively sort A[p..r] in place using the provided partition function.
 
@@ -123,12 +157,13 @@ def quicksort(A, p, r, partition_fn):
         p:            left boundary index (inclusive)
         r:            right boundary index (inclusive)
         partition_fn: callable — either partition() or median_of_three_partition()
+        trace:        if True, each partition call prints its pivot and split sizes
+        counter:      one-element list [n] tracking total partition calls made
     """
     if p < r:
-        # Partition the subarray and get the pivot's final position
-        q = partition_fn(A, p, r)
-        quicksort(A, p, q - 1, partition_fn)   # recursively sort the low side
-        quicksort(A, q +  1, r, partition_fn)  # recursively sort the high side
+        q = partition_fn(A, p, r, trace, counter)
+        quicksort(A, p, q - 1, partition_fn, trace, counter)   # recursively sort the low side
+        quicksort(A, q + 1, r,  partition_fn, trace, counter)  # recursively sort the high side
 
 
 def main():
@@ -145,7 +180,6 @@ def main():
         description="Sort comma-separated integers using quicksort."
     )
 
-    # Optional file input; if omitted, falls back to stdin
     parser.add_argument(
         "-f", "--file",
         metavar="FILE",
@@ -153,8 +187,6 @@ def main():
              "(defaults to stdin if not provided)"
     )
 
-    # Optional partition strategy; choices are explicit so invalid values are
-    # caught automatically and a helpful error is printed
     parser.add_argument(
         "-p", "--partition",
         metavar="METHOD",
@@ -165,18 +197,28 @@ def main():
              "[default: default]"
     )
 
-    # Boolean flag — present means True, absent means False (no value expected)
     parser.add_argument(
         "-s", "--suppress",
         action="store_true",
         help="suppress sorted output (useful for benchmarking)"
     )
 
+    # Trace flag — prints each partition call's pivot and left/right split sizes.
+    # The total call count is always printed to stderr regardless of this flag.
+    # WARNING: produces n-1 lines of output — only practical for small inputs.
+    # For large n, omit --trace and just observe the total call count instead.
+    parser.add_argument(
+        "-t", "--trace",
+        action="store_true",
+        help="print each partition call showing pivot value and left/right split sizes. "
+             "Total call count is always printed to stderr. "
+             "WARNING: produces n-1 lines — only practical for small inputs."
+    )
+
     args = parser.parse_args()
 
     # --- Input reading ---
     if args.file:
-        # Read from the provided file path
         try:
             with open(args.file, "r") as fh:
                 data = fh.read().strip()
@@ -184,7 +226,6 @@ def main():
             print(f"Error: could not read file '{args.file}': {e}", file=sys.stderr)
             sys.exit(1)
     else:
-        # Fall back to stdin (original behaviour)
         data = sys.stdin.read().strip()
 
     if not data:
@@ -197,15 +238,26 @@ def main():
         print("Error: input must be comma-separated integers.", file=sys.stderr)
         sys.exit(1)
 
+    n = len(A)
+
     # --- Partition function selection ---
     if args.partition == "median-of-three":
         partition_fn = median_of_three_partition
     else:
-        # Covers both explicit "default" and the argparse fallback default
         partition_fn = partition
 
-    # Quicksort uses 0-based indices: p=0, r=len-1
-    quicksort(A, 0, len(A) - 1, partition_fn)
+    # counter is a one-element list so it can be mutated inside recursive calls.
+    # Every call to partition() or median_of_three_partition() increments counter[0]
+    # by 1. The total will always be n-1 (each call places exactly one pivot in its
+    # final position). What differs between best and worst case is not the call count
+    # but the SIZE of the work done per call — visible in the --trace left/right output.
+    counter = [0]
+
+    quicksort(A, 0, n - 1, partition_fn, args.trace, counter)
+
+    # Always print the total partition call count to stderr so it is visible
+    # even when --suppress is used and stdout is clean.
+    print(f"\n[total partition calls: {counter[0]}  (n={n},  expected n-1={n-1})]", file=sys.stderr)
 
     if not args.suppress:
         print(",".join(map(str, A)))
