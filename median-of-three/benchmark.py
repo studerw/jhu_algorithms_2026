@@ -24,19 +24,19 @@ TEST_INPUT_DIR  = "test_input"
 OUTPUT_FILE     = "output.md"
 PYTHON          = sys.executable
 JAVA            = "java"
-JAVA_STACK_FLAG = "-Xss64m"
+JAVA_STACK_FLAG = "-Xss512m"
 
 # The four benchmark configurations: (label, command_template)
 # {file} will be substituted with the actual input file path
 CONFIGS = [
-    (
-        "Python (default)",
-        [PYTHON, "quicksort.py", "--suppress", "--partition", "default", "-f", "{file}"]
-    ),
-    (
-        "Python (median-of-three)",
-        [PYTHON, "quicksort.py", "--suppress", "--partition", "median-of-three", "-f", "{file}"]
-    ),
+    # (
+    #     "Python (default)",
+    #     [PYTHON, "quicksort.py", "--suppress", "--partition", "default", "-f", "{file}"]
+    # ),
+    # (
+    #     "Python (median-of-three)",
+    #     [PYTHON, "quicksort.py", "--suppress", "--partition", "median-of-three", "-f", "{file}"]
+    # ),
     (
         "Java (default)",
         [JAVA, JAVA_STACK_FLAG, "QuickSort", "--suppress", "--partition", "default", "-f", "{file}"]
