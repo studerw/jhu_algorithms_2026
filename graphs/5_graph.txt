@@ -1,0 +1,6 @@
+--- Generating Random Graph (n=5, m=7, weighted=False, directed=False) ---
+A: E, D, C
+B: C, D
+C: D, B, A
+D: E, A, C, B
+E: D, A
